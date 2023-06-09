@@ -1,0 +1,82 @@
+// Blog banner section start
+#Blog-banner {
+  height: 400px;
+  background-image: url(../images/breadcumb_bg_1.jpg);
+  background-position: center !important;
+  background-size: cover !important;
+  position: relative;
+  z-index: 1;
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+  }
+}
+// Blog banner section end
+
+// Blog slider section start
+#blog-slider {
+  .blog_slider_item {
+    position: relative;
+    .blog_slider_arrows.fa-angle-left,
+    .blog_slider_arrows.fa-angle-right {
+      font-size: 24px;
+      color: $lightColor;
+      position: absolute;
+      padding: 8px 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 999;
+      background: $praimaryColor;
+      transition: 0.5s;
+    }
+    .blog_slider_arrows.fa-angle-left {
+      left: 0;
+    }
+    .blog_slider_arrows.fa-angle-right {
+      right: 0;
+    }
+    .blog_slider_arrows:hover {
+      background: $PrimaryColor3;
+    }
+  }
+  .blog_slider_info {
+    padding-top: 35px;
+    p {
+      display: inline-block;
+      line-height: 26px;
+      color: $ParagraphColor;
+      margin-bottom: 6px;
+      &:first-child {
+        border-right: 1px solid #bdbdbd;
+        padding-right: 20px;
+      }
+      &:nth-child(2) {
+        padding-left: 20px;
+      }
+      &:last-child {
+        border-right: none;
+      }
+
+      span {
+        padding-right: 10px;
+      }
+    }
+    h4 {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 40px;
+      color: $praimaryColor;
+      margin-bottom: 16px;
+    }
+    a {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 28px;
+      color: $praimaryColor;
+    }
+  }
+}
+// Blog slider section end

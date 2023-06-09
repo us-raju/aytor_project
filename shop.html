@@ -1,0 +1,1735 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <!-- Google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- slick slider css  -->
+    <link rel="stylesheet" href="./assets/css/slick.min.css" />
+    <!-- fontawesome css  -->
+    <link rel="stylesheet" href="./assets/css/all.min.css" />
+    <!-- venobox css  -->
+    <link rel="stylesheet" href="./assets/css/venobox.min.css" />
+    <!-- xzoom css  -->
+    <link rel="stylesheet" href="./assets/css/xzoom.min.css" />
+    <!-- country select css  -->
+    <link rel="stylesheet" href="./assets/css/countrySelect.min.css">
+    <!-- aos css  -->
+    <link rel="stylesheet" href="./assets/css/aos.css" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <!-- custom css  -->
+    <link rel="stylesheet" href="./assets/css/style.min.css" />
+    <!-- Resposnive css  -->
+    <link rel="stylesheet" href="./assets/responsive/responsive.css" />
+  </head>
+  <body>
+    <!-- Header section start  -->
+    <header>
+      <div class="container">
+        <div class="head_contant d-flex justify-content-between">
+          <div class="first">
+            <span><i class="fa-solid fa-paper-plane"></i></span>
+            <p>FREE SHIPING world wide for all orders over <ins>$150</ins></p>
+          </div>
+          <div class="last d-flex">
+            <div class="track-order">
+              <p>Track Your Order</p>
+            </div>
+            <div class="language">
+              <p>English</p>
+            </div>
+            <div class="currency">
+              <p>USD</p>
+            </div>
+            <div class="s-icon">
+              <ul class="d-flex">
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header section end  -->
+
+    <!-- nav section start  -->
+    <nav id="nav" class="navbar navbar-expand-lg">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <img src="./assets/images/aytor_logo.png" alt="" class="img-fluid" />
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav-menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav-menu">
+          <ul class="navbar-nav mx-auto">
+            <li>
+              <a class="nav-link" href="index.html">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shop.html">Shop </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pages </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blogs </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="fa-icon">
+          <ul class="d-flex">
+            <li>
+              <a href="#"
+                ><i id="m-glass" class="fa-solid fa-magnifying-glass"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-regular fa-user"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-regular fa-heart"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- nav section end  -->
+
+    <!-- shop banner section start  -->
+    <div id="shop-banner">
+      <div class="container">
+        <div class="page-heading">
+          <h1>Shop - Grid</h1>
+          <p><a href="index.html">Home</a> / Shop - Grid</p>
+        </div>
+      </div>
+    </div>
+    <!-- shop banner section end  -->
+
+    <!-- Product section start  -->
+    <section id="product_shop">
+      <div class="container">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="shop_type_one_tab"
+              data-bs-toggle="pill"
+              data-bs-target="#shop_type_one"
+              type="button"
+              role="tab"
+              aria-controls="shop_type_one"
+              aria-selected="true"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="shop_type_tow_tab"
+              data-bs-toggle="pill"
+              data-bs-target="#shop_type_two"
+              type="button"
+              role="tab"
+              aria-controls="shop_type_two"
+              aria-selected="false"
+            >
+              <i class="fa-solid fa-table-cells"></i>
+            </button>
+          </li>
+          <li class="select_option">
+            <select>
+              <option selected>Sort by Latest</option>
+              <option>Sort by Oldest</option>
+              <option>Sort by Ascending</option>
+              <option>Sort by Descending</option>
+            </select>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="shop_type_one"
+            role="tabpanel"
+            aria-labelledby="shop_type_one_tab"
+          >
+            <div class="shop_product_one">
+              <div class="shop_product_item">
+                <div class="shop_product_inner_item row mb-lg-4">
+                  <div class="shop_product_images col-lg-3">
+                    <img
+                      src="./assets/images/product_1_1.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                    <div class="product_badge_overlay">
+                      <p>New</p>
+                    </div>
+                  </div>
+                  <div class="shop_product_text col-lg-9">
+                    <h3>Spaghetti Hoodie</h3>
+                    <ins>$125.65</ins>
+                    <div class="faStar">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>
+                      Quickly engage backward-compatible core competencies
+                      rather than cross-platform synergy. Intrinsicly
+                      disseminate alternative infomediaries through
+                      next-generation internal or "organic" sources.
+                      Authoritatively procrastinate mission-critical catalysts
+                      for change through tactical manufactured products.
+                      Credibly target 24/365 niche.
+                    </p>
+                    <div class="shop_product_icon">
+                      <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                      <a href="#"><i class="fa-solid fa-heart"></i></a>
+                      <a href="#"><i class="fa-solid fa-eye"></i></a>
+                      <a href="#"><i class="fa-solid fa-signal"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="shop_product_inner_item row mb-lg-4">
+                  <div class="shop_product_images col-lg-3">
+                    <img
+                      src="./assets/images/product_1_2.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="shop_product_text col-lg-9">
+                    <h3>Crew Neck Cotton</h3>
+                    <ins>$150.65</ins>
+                    <div class="faStar">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>
+                      Quickly engage backward-compatible core competencies
+                      rather than cross-platform synergy. Intrinsicly
+                      disseminate alternative infomediaries through
+                      next-generation internal or "organic" sources.
+                      Authoritatively procrastinate mission-critical catalysts
+                      for change through tactical manufactured products.
+                      Credibly target 24/365 niche.
+                    </p>
+                    <div class="shop_product_icon">
+                      <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                      <a href="#"><i class="fa-solid fa-heart"></i></a>
+                      <a href="#"><i class="fa-solid fa-eye"></i></a>
+                      <a href="#"><i class="fa-solid fa-signal"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="shop_product_inner_item row mb-lg-4">
+                  <div class="shop_product_images col-lg-3">
+                    <img
+                      src="./assets/images/product_1_3.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                    <div class="product_badge_overlay">
+                      <p>New</p>
+                    </div>
+                  </div>
+                  <div class="shop_product_text col-lg-9">
+                    <h3>Spaghetti Strap Dress</h3>
+                    <ins>$125.65</ins>
+                    <div class="faStar">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>
+                      Quickly engage backward-compatible core competencies
+                      rather than cross-platform synergy. Intrinsicly
+                      disseminate alternative infomediaries through
+                      next-generation internal or "organic" sources.
+                      Authoritatively procrastinate mission-critical catalysts
+                      for change through tactical manufactured products.
+                      Credibly target 24/365 niche.
+                    </p>
+                    <div class="shop_product_icon">
+                      <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                      <a href="#"><i class="fa-solid fa-heart"></i></a>
+                      <a href="#"><i class="fa-solid fa-eye"></i></a>
+                      <a href="#"><i class="fa-solid fa-signal"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="shop_product_inner_item row mb-lg-4">
+                  <div class="shop_product_images col-lg-3">
+                    <img
+                      src="./assets/images/product_1_4.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="shop_product_text col-lg-9">
+                    <h3>Pink Neck Frog</h3>
+                    <ins>$350.65</ins>
+                    <div class="faStar">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>
+                      Quickly engage backward-compatible core competencies
+                      rather than cross-platform synergy. Intrinsicly
+                      disseminate alternative infomediaries through
+                      next-generation internal or "organic" sources.
+                      Authoritatively procrastinate mission-critical catalysts
+                      for change through tactical manufactured products.
+                      Credibly target 24/365 niche.
+                    </p>
+                    <div class="shop_product_icon">
+                      <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                      <a href="#"><i class="fa-solid fa-heart"></i></a>
+                      <a href="#"><i class="fa-solid fa-eye"></i></a>
+                      <a href="#"><i class="fa-solid fa-signal"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="shop_product_inner_item row mb-lg-4">
+                  <div class="shop_product_images col-lg-3">
+                    <img
+                      src="./assets/images/product_1_5.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                    <div class="product_badge_overlay">
+                      <p>New</p>
+                    </div>
+                  </div>
+                  <div class="shop_product_text col-lg-9">
+                    <h3>T-shirt Blouse Sleeve</h3>
+                    <ins>$125.65</ins>
+                    <div class="faStar">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>
+                      Quickly engage backward-compatible core competencies
+                      rather than cross-platform synergy. Intrinsicly
+                      disseminate alternative infomediaries through
+                      next-generation internal or "organic" sources.
+                      Authoritatively procrastinate mission-critical catalysts
+                      for change through tactical manufactured products.
+                      Credibly target 24/365 niche.
+                    </p>
+                    <div class="shop_product_icon">
+                      <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                      <a href="#"><i class="fa-solid fa-heart"></i></a>
+                      <a href="#"><i class="fa-solid fa-eye"></i></a>
+                      <a href="#"><i class="fa-solid fa-signal"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="shop_product_inner_item row mb-lg-4">
+                  <div class="shop_product_images col-lg-3">
+                    <img
+                      src="./assets/images/product_1_6.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="shop_product_text col-lg-9">
+                    <h3>Crew Neck T-shirt</h3>
+                    <ins>$150.65</ins>
+                    <div class="faStar">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>
+                      Quickly engage backward-compatible core competencies
+                      rather than cross-platform synergy. Intrinsicly
+                      disseminate alternative infomediaries through
+                      next-generation internal or "organic" sources.
+                      Authoritatively procrastinate mission-critical catalysts
+                      for change through tactical manufactured products.
+                      Credibly target 24/365 niche.
+                    </p>
+                    <div class="shop_product_icon">
+                      <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                      <a href="#"><i class="fa-solid fa-heart"></i></a>
+                      <a href="#"><i class="fa-solid fa-eye"></i></a>
+                      <a href="#"><i class="fa-solid fa-signal"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="shop_product_inner_item row mb-lg-4">
+                  <div class="shop_product_images col-lg-3">
+                    <img
+                      src="./assets/images/product_1_7.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                    <div class="product_badge_overlay">
+                      <p>New</p>
+                    </div>
+                  </div>
+                  <div class="shop_product_text col-lg-9">
+                    <h3>Blouse Jacket</h3>
+                    <ins>$125.65</ins>
+                    <div class="faStar">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>
+                      Quickly engage backward-compatible core competencies
+                      rather than cross-platform synergy. Intrinsicly
+                      disseminate alternative infomediaries through
+                      next-generation internal or "organic" sources.
+                      Authoritatively procrastinate mission-critical catalysts
+                      for change through tactical manufactured products.
+                      Credibly target 24/365 niche.
+                    </p>
+                    <div class="shop_product_icon">
+                      <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                      <a href="#"><i class="fa-solid fa-heart"></i></a>
+                      <a href="#"><i class="fa-solid fa-eye"></i></a>
+                      <a href="#"><i class="fa-solid fa-signal"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="shop_product_inner_item row mb-lg-4">
+                  <div class="shop_product_images col-lg-3">
+                    <img
+                      src="./assets/images/product_1_8.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="shop_product_text col-lg-9">
+                    <h3>Hoodie Sweater Bluza</h3>
+                    <ins>$125.65</ins>
+                    <div class="faStar">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>
+                      Quickly engage backward-compatible core competencies
+                      rather than cross-platform synergy. Intrinsicly
+                      disseminate alternative infomediaries through
+                      next-generation internal or "organic" sources.
+                      Authoritatively procrastinate mission-critical catalysts
+                      for change through tactical manufactured products.
+                      Credibly target 24/365 niche.
+                    </p>
+                    <div class="shop_product_icon">
+                      <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                      <a href="#"><i class="fa-solid fa-heart"></i></a>
+                      <a href="#"><i class="fa-solid fa-eye"></i></a>
+                      <a href="#"><i class="fa-solid fa-signal"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="shop_product_inner_item row mb-lg-4">
+                  <div class="shop_product_images col-lg-3">
+                    <img
+                      src="./assets/images/product_1_9.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                    <div class="product_badge_overlay">
+                      <p>New</p>
+                    </div>
+                  </div>
+                  <div class="shop_product_text col-lg-9">
+                    <h3>Hoodie Coat Outerwear</h3>
+                    <ins>$125.65</ins>
+                    <div class="faStar">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>
+                      Quickly engage backward-compatible core competencies
+                      rather than cross-platform synergy. Intrinsicly
+                      disseminate alternative infomediaries through
+                      next-generation internal or "organic" sources.
+                      Authoritatively procrastinate mission-critical catalysts
+                      for change through tactical manufactured products.
+                      Credibly target 24/365 niche.
+                    </p>
+                    <div class="shop_product_icon">
+                      <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                      <a href="#"><i class="fa-solid fa-heart"></i></a>
+                      <a href="#"><i class="fa-solid fa-eye"></i></a>
+                      <a href="#"><i class="fa-solid fa-signal"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="shop_product_inner_item row mb-lg-4">
+                  <div class="shop_product_images col-lg-3">
+                    <img
+                      src="./assets/images/product_1_10.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="shop_product_text col-lg-9">
+                    <h3>Flight jacket</h3>
+                    <ins>$150.65</ins>
+                    <div class="faStar">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>
+                      Quickly engage backward-compatible core competencies
+                      rather than cross-platform synergy. Intrinsicly
+                      disseminate alternative infomediaries through
+                      next-generation internal or "organic" sources.
+                      Authoritatively procrastinate mission-critical catalysts
+                      for change through tactical manufactured products.
+                      Credibly target 24/365 niche.
+                    </p>
+                    <div class="shop_product_icon">
+                      <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                      <a href="#"><i class="fa-solid fa-heart"></i></a>
+                      <a href="#"><i class="fa-solid fa-eye"></i></a>
+                      <a href="#"><i class="fa-solid fa-signal"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="shop_product_inner_item row mb-lg-4">
+                  <div class="shop_product_images col-lg-3">
+                    <img
+                      src="./assets/images/product_1_11.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                    <div class="product_badge_overlay">
+                      <p>New</p>
+                    </div>
+                  </div>
+                  <div class="shop_product_text col-lg-9">
+                    <h3>Shoulder Dress, Plus-size</h3>
+                    <ins>$125.65</ins>
+                    <div class="faStar">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>
+                      Quickly engage backward-compatible core competencies
+                      rather than cross-platform synergy. Intrinsicly
+                      disseminate alternative infomediaries through
+                      next-generation internal or "organic" sources.
+                      Authoritatively procrastinate mission-critical catalysts
+                      for change through tactical manufactured products.
+                      Credibly target 24/365 niche.
+                    </p>
+                    <div class="shop_product_icon">
+                      <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                      <a href="#"><i class="fa-solid fa-heart"></i></a>
+                      <a href="#"><i class="fa-solid fa-eye"></i></a>
+                      <a href="#"><i class="fa-solid fa-signal"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="shop_product_inner_item row mb-lg-4">
+                  <div class="shop_product_images col-lg-3">
+                    <img
+                      src="./assets/images/product_1_12.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                    <div class="product_badge_overlay">
+                      <p>New</p>
+                    </div>
+                  </div>
+                  <div class="shop_product_text col-lg-9">
+                    <h3>Pajamas Nightwear</h3>
+                    <ins>$350.65</ins>
+                    <div class="faStar">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>
+                      Quickly engage backward-compatible core competencies
+                      rather than cross-platform synergy. Intrinsicly
+                      disseminate alternative infomediaries through
+                      next-generation internal or "organic" sources.
+                      Authoritatively procrastinate mission-critical catalysts
+                      for change through tactical manufactured products.
+                      Credibly target 24/365 niche.
+                    </p>
+                    <div class="shop_product_icon">
+                      <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                      <a href="#"><i class="fa-solid fa-heart"></i></a>
+                      <a href="#"><i class="fa-solid fa-eye"></i></a>
+                      <a href="#"><i class="fa-solid fa-signal"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="shop_type_two"
+          role="tabpanel"
+          aria-labelledby="shop_type_two_tab"
+        >
+          <div class="shop_product_two">
+            <div class="shop_product_item row">
+              <div class="col-lg-3 mb-3">
+                <div class="shop_item m-lg-2 p-0 text-center">
+                  <div class="shop_item_img position-relative overflow-hidden">
+                    <img
+                      src="./assets/images/product_1_1.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="product_info d-flex justify-content-between">
+                    <div>
+                      <h3>Spaghetti Hoodie</h3>
+                    </div>
+                    <div class="faStar">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <!-- <span>(5)</span> -->
+                    </div>
+                  </div>
+                  <div class="price">
+                    <p><ins>$125.65</ins></p>
+                  </div>
+                  <div class="product_badge_overlay">
+                    <p>New</p>
+                  </div>
+                  <div class="product_icon_overlay">
+                    <ul>
+                      <li>
+                        <a
+                          href="#"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="Add to cart"
+                          data-bs-custom-class="custom-tooltip"
+                          ><i class="fa-solid fa-cart-plus"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="Add to Wishlist"
+                          data-bs-custom-class="custom-tooltip"
+                          ><i class="fa-solid fa-heart"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="Add to Quick View"
+                          data-bs-custom-class="custom-tooltip"
+                          ><i class="fa-solid fa-eye"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="Add to Compare"
+                          data-bs-custom-class="custom-tooltip"
+                          ><i class="fa-solid fa-signal"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-3">
+                <div class="shop_item m-lg-2 p-0 text-center">
+                  <div class="shop_item_img position-relative overflow-hidden">
+                    <img
+                      src="./assets/images/product_1_2.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="product_info d-flex justify-content-between">
+                    <div>
+                      <h3>Crew Neck Cotton</h3>
+                    </div>
+                    <div class="faStar">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <!-- <span>(5)</span> -->
+                    </div>
+                  </div>
+                  <div class="price">
+                    <p><ins>$150.65</ins></p>
+                  </div>
+                  <div class="product_icon_overlay">
+                    <ul>
+                      <li>
+                        <a
+                          href="#"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="Add to cart"
+                          data-bs-custom-class="custom-tooltip"
+                          ><i class="fa-solid fa-cart-plus"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="Add to Wishlist"
+                          data-bs-custom-class="custom-tooltip"
+                          ><i class="fa-solid fa-heart"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="Add to Quick View"
+                          data-bs-custom-class="custom-tooltip"
+                          ><i class="fa-solid fa-eye"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="Add to Compare"
+                          data-bs-custom-class="custom-tooltip"
+                          ><i class="fa-solid fa-signal"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-3">
+                <div class="shop_item m-lg-2 p-0 text-center">
+                  <div class="shop_item_img position-relative overflow-hidden">
+                    <img
+                      src="./assets/images/product_1_3.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="product_info d-flex justify-content-between">
+                    <div>
+                      <h3>Spaghetti Strap Dress</h3>
+                    </div>
+                    <div class="faStar">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <!-- <span>(5)</span> -->
+                    </div>
+                  </div>
+                  <div class="price">
+                    <p><ins>$125.65</ins></p>
+                  </div>
+                  <div class="product_badge_overlay">
+                    <p>New</p>
+                  </div>
+                  <div class="product_icon_overlay">
+                    <ul>
+                      <li>
+                        <a
+                          href="#"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="Add to cart"
+                          data-bs-custom-class="custom-tooltip"
+                          ><i class="fa-solid fa-cart-plus"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="Add to Wishlist"
+                          data-bs-custom-class="custom-tooltip"
+                          ><i class="fa-solid fa-heart"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="Add to Quick View"
+                          data-bs-custom-class="custom-tooltip"
+                          ><i class="fa-solid fa-eye"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="Add to Compare"
+                          data-bs-custom-class="custom-tooltip"
+                          ><i class="fa-solid fa-signal"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-3">
+                <div class="shop_item m-lg-2 p-0 text-center">
+                  <div class="shop_item_img position-relative overflow-hidden">
+                    <img
+                      src="./assets/images/product_1_4.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="product_info d-flex justify-content-between">
+                    <div>
+                      <h3>Pink Neck Frog</h3>
+                    </div>
+                    <div class="faStar">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <!-- <span>(5)</span> -->
+                    </div>
+                  </div>
+                  <div class="price">
+                    <p><ins>$350.65</ins></p>
+                  </div>
+                  <div class="product_icon_overlay">
+                    <ul>
+                      <li>
+                        <a
+                          href="#"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="Add to cart"
+                          data-bs-custom-class="custom-tooltip"
+                          ><i class="fa-solid fa-cart-plus"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="Add to Wishlist"
+                          data-bs-custom-class="custom-tooltip"
+                          ><i class="fa-solid fa-heart"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="Add to Quick View"
+                          data-bs-custom-class="custom-tooltip"
+                          ><i class="fa-solid fa-eye"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="Add to Compare"
+                          data-bs-custom-class="custom-tooltip"
+                          ><i class="fa-solid fa-signal"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-3">
+                <div class="shop_item m-lg-2 p-0 text-center">
+                  <div class="shop_item_img position-relative overflow-hidden">
+                    <img
+                      src="./assets/images/product_1_5.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="product_info d-flex justify-content-between">
+                    <div>
+                      <h3>T-shirt Blouse Sleeve</h3>
+                    </div>
+                    <div class="faStar">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <!-- <span>(5)</span> -->
+                    </div>
+                  </div>
+                  <div class="price">
+                    <p><ins>$125.65</ins></p>
+                  </div>
+                  <div class="product_badge_overlay">
+                    <p>New</p>
+                  </div>
+                  <div class="product_icon_overlay">
+                    <ul>
+                      <li>
+                        <a
+                          href="#"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="Add to cart"
+                          data-bs-custom-class="custom-tooltip"
+                          ><i class="fa-solid fa-cart-plus"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="Add to Wishlist"
+                          data-bs-custom-class="custom-tooltip"
+                          ><i class="fa-solid fa-heart"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="Add to Quick View"
+                          data-bs-custom-class="custom-tooltip"
+                          ><i class="fa-solid fa-eye"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="Add to Compare"
+                          data-bs-custom-class="custom-tooltip"
+                          ><i class="fa-solid fa-signal"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-3">
+                <div class="shop_item m-lg-2 p-0 text-center">
+                  <div class="shop_item_img position-relative overflow-hidden">
+                    <img
+                      src="./assets/images/product_1_6.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="product_info d-flex justify-content-between">
+                    <div>
+                      <h3>Crew Neck T-shirt</h3>
+                    </div>
+                    <div class="faStar">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <!-- <span>(5)</span> -->
+                    </div>
+                  </div>
+                  <div class="price">
+                    <p><ins>$150.65</ins></p>
+                  </div>
+                  <div class="product_icon_overlay">
+                    <ul>
+                      <li>
+                        <a
+                          href="#"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="Add to cart"
+                          data-bs-custom-class="custom-tooltip"
+                          ><i class="fa-solid fa-cart-plus"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="Add to Wishlist"
+                          data-bs-custom-class="custom-tooltip"
+                          ><i class="fa-solid fa-heart"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="Add to Quick View"
+                          data-bs-custom-class="custom-tooltip"
+                          ><i class="fa-solid fa-eye"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="Add to Compare"
+                          data-bs-custom-class="custom-tooltip"
+                          ><i class="fa-solid fa-signal"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-3">
+                <div class="shop_item m-lg-2 p-0 text-center">
+                  <div class="shop_item_img position-relative overflow-hidden">
+                    <img
+                      src="./assets/images/product_1_7.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="product_info d-flex justify-content-between">
+                    <div>
+                      <h3>Blouse Jacket</h3>
+                    </div>
+                    <div class="faStar">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <!-- <span>(5)</span> -->
+                    </div>
+                  </div>
+                  <div class="price">
+                    <p><ins>$125.65</ins></p>
+                  </div>
+                  <div class="product_badge_overlay">
+                    <p>New</p>
+                  </div>
+                  <div class="product_icon_overlay">
+                    <ul>
+                      <li>
+                        <a
+                          href="#"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="Add to cart"
+                          data-bs-custom-class="custom-tooltip"
+                          ><i class="fa-solid fa-cart-plus"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="Add to Wishlist"
+                          data-bs-custom-class="custom-tooltip"
+                          ><i class="fa-solid fa-heart"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="Add to Quick View"
+                          data-bs-custom-class="custom-tooltip"
+                          ><i class="fa-solid fa-eye"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="Add to Compare"
+                          data-bs-custom-class="custom-tooltip"
+                          ><i class="fa-solid fa-signal"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-3">
+                <div class="shop_item m-lg-2 p-0 text-center">
+                  <div class="shop_item_img position-relative overflow-hidden">
+                    <img
+                      src="./assets/images/product_1_8.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="product_info d-flex justify-content-between">
+                    <div>
+                      <h3>Hoodie Sweater Bluza</h3>
+                    </div>
+                    <div class="faStar">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <!-- <span>(5)</span> -->
+                    </div>
+                  </div>
+                  <div class="price">
+                    <p><ins>$350.65</ins></p>
+                  </div>
+                  <div class="product_icon_overlay">
+                    <ul>
+                      <li>
+                        <a
+                          href="#"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="Add to cart"
+                          data-bs-custom-class="custom-tooltip"
+                          ><i class="fa-solid fa-cart-plus"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="Add to Wishlist"
+                          data-bs-custom-class="custom-tooltip"
+                          ><i class="fa-solid fa-heart"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="Add to Quick View"
+                          data-bs-custom-class="custom-tooltip"
+                          ><i class="fa-solid fa-eye"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="Add to Compare"
+                          data-bs-custom-class="custom-tooltip"
+                          ><i class="fa-solid fa-signal"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-3">
+                <div class="shop_item m-lg-2 p-0 text-center">
+                  <div class="shop_item_img position-relative overflow-hidden">
+                    <img
+                      src="./assets/images/product_1_9.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="product_info d-flex justify-content-between">
+                    <div>
+                      <h3>Hoodie Coat Outerwear</h3>
+                    </div>
+                    <div class="faStar">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <!-- <span>(5)</span> -->
+                    </div>
+                  </div>
+                  <div class="price">
+                    <p><ins>$125.65</ins></p>
+                  </div>
+                  <div class="product_badge_overlay">
+                    <p>New</p>
+                  </div>
+                  <div class="product_icon_overlay">
+                    <ul>
+                      <li>
+                        <a
+                          href="#"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="Add to cart"
+                          data-bs-custom-class="custom-tooltip"
+                          ><i class="fa-solid fa-cart-plus"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="Add to Wishlist"
+                          data-bs-custom-class="custom-tooltip"
+                          ><i class="fa-solid fa-heart"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="Add to Quick View"
+                          data-bs-custom-class="custom-tooltip"
+                          ><i class="fa-solid fa-eye"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="Add to Compare"
+                          data-bs-custom-class="custom-tooltip"
+                          ><i class="fa-solid fa-signal"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-3">
+                <div class="shop_item m-lg-2 p-0 text-center">
+                  <div class="shop_item_img position-relative overflow-hidden">
+                    <img
+                      src="./assets/images/product_1_10.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="product_info d-flex justify-content-between">
+                    <div>
+                      <h3>Flight jacket</h3>
+                    </div>
+                    <div class="faStar">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <!-- <span>(5)</span> -->
+                    </div>
+                  </div>
+                  <div class="price">
+                    <p><ins>$150.65</ins></p>
+                  </div>
+                  <div class="product_icon_overlay">
+                    <ul>
+                      <li>
+                        <a
+                          href="#"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="Add to cart"
+                          data-bs-custom-class="custom-tooltip"
+                          ><i class="fa-solid fa-cart-plus"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="Add to Wishlist"
+                          data-bs-custom-class="custom-tooltip"
+                          ><i class="fa-solid fa-heart"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="Add to Quick View"
+                          data-bs-custom-class="custom-tooltip"
+                          ><i class="fa-solid fa-eye"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="Add to Compare"
+                          data-bs-custom-class="custom-tooltip"
+                          ><i class="fa-solid fa-signal"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-3">
+                <div class="shop_item m-lg-2 p-0 text-center">
+                  <div class="shop_item_img position-relative overflow-hidden">
+                    <img
+                      src="./assets/images/product_1_11.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="product_info d-flex justify-content-between">
+                    <div>
+                      <h3>Shoulder Dress, Plus-size</h3>
+                    </div>
+                    <div class="faStar">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <!-- <span>(5)</span> -->
+                    </div>
+                  </div>
+                  <div class="price">
+                    <p><ins>$125.65</ins></p>
+                  </div>
+                  <div class="product_badge_overlay">
+                    <p>New</p>
+                  </div>
+                  <div class="product_icon_overlay">
+                    <ul>
+                      <li>
+                        <a
+                          href="#"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="Add to cart"
+                          data-bs-custom-class="custom-tooltip"
+                          ><i class="fa-solid fa-cart-plus"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="Add to Wishlist"
+                          data-bs-custom-class="custom-tooltip"
+                          ><i class="fa-solid fa-heart"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="Add to Quick View"
+                          data-bs-custom-class="custom-tooltip"
+                          ><i class="fa-solid fa-eye"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="Add to Compare"
+                          data-bs-custom-class="custom-tooltip"
+                          ><i class="fa-solid fa-signal"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-3">
+                <div class="shop_item m-lg-2 p-0 text-center">
+                  <div class="shop_item_img position-relative overflow-hidden">
+                    <img
+                      src="./assets/images/product_1_12.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="product_info d-flex justify-content-between">
+                    <div>
+                      <h3>Pajamas Nightwear</h3>
+                    </div>
+                    <div class="faStar">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <!-- <span>(5)</span> -->
+                    </div>
+                  </div>
+                  <div class="price">
+                    <p><ins>$350.65</ins></p>
+                  </div>
+                  <div class="product_icon_overlay">
+                    <ul>
+                      <li>
+                        <a
+                          href="#"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="Add to cart"
+                          data-bs-custom-class="custom-tooltip"
+                          ><i class="fa-solid fa-cart-plus"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="Add to Wishlist"
+                          data-bs-custom-class="custom-tooltip"
+                          ><i class="fa-solid fa-heart"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="Add to Quick View"
+                          data-bs-custom-class="custom-tooltip"
+                          ><i class="fa-solid fa-eye"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          data-bs-title="Add to Compare"
+                          data-bs-custom-class="custom-tooltip"
+                          ><i class="fa-solid fa-signal"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product section end  -->
+
+    <!-- promotion section start  -->
+    <section id="promotion">
+      <div class="container">
+        <div class="row promotion-inner-container">
+          <div class="promotion-content col-lg-3 d-flex">
+            <div class="promotion-img">
+              <img src="./assets/images/truck.png" alt="" />
+            </div>
+            <div class="promotion-info">
+              <h6>FREE SHIPING</h6>
+              <p>All orders over $150</p>
+            </div>
+          </div>
+          <div class="promotion-content col-lg-3 d-flex">
+            <div class="promotion-img">
+              <img src="./assets/images/truck.png" alt="" />
+            </div>
+            <div class="promotion-info">
+              <h6>QUICK PAYMENT</h6>
+              <p>100% secure payment</p>
+            </div>
+          </div>
+          <div class="promotion-content col-lg-3 d-flex">
+            <div class="promotion-img">
+              <img src="./assets/images/truck.png" alt="" />
+            </div>
+            <div class="promotion-info">
+              <h6>FREE RETURNS</h6>
+              <p>Return money within 30 days</p>
+            </div>
+          </div>
+          <div class="promotion-content col-lg-3 d-flex">
+            <div class="promotion-img">
+              <img src="./assets/images/truck.png" alt="" />
+            </div>
+            <div class="promotion-info">
+              <h6>24/7 SUPPORT</h6>
+              <p>Quick Support</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- promotionsection end  -->
+
+    <!-- footer section start  -->
+    <footer>
+      <div class="container">
+        <div class="top d-flex justify-content-between align-items-center">
+          <div class="social-icon">
+            <ul class="d-flex">
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="aytor-logo">
+            <img
+              src="./assets/images/white-logo.png"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div class="credit-card">
+            <img
+              src="./assets/images/major-credit-card-logo-transparent-thumb 1.jpg"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+        </div>
+        <div class="mid row">
+          <div class="account col-lg-2 p-0">
+            <h4>My Account</h4>
+            <a class="d-block" href="#"
+              ><span><i class="fa-solid fa-angle-right"></i></span>My Account
+            </a>
+            <a class="d-block" href="#"
+              ><span><i class="fa-solid fa-angle-right"></i></span>View Cart
+            </a>
+            <a class="d-block" href="#"
+              ><span><i class="fa-solid fa-angle-right"></i></span>Wishlist
+            </a>
+            <a class="d-block" href="#"
+              ><span><i class="fa-solid fa-angle-right"></i></span>Compare
+            </a>
+            <a class="d-block" href="#"
+              ><span><i class="fa-solid fa-angle-right"></i></span>New Products
+            </a>
+          </div>
+          <div class="Support col-lg-2 p-0">
+            <h4>Support</h4>
+            <a class="d-block" href="#"
+              ><span><i class="fa-solid fa-angle-right"></i></span>Help
+            </a>
+            <a class="d-block" href="#"
+              ><span><i class="fa-solid fa-angle-right"></i></span>Contact Us
+            </a>
+            <a class="d-block" href="#"
+              ><span><i class="fa-solid fa-angle-right"></i></span>Feedback</a
+            >
+            <a class="d-block" href="#"
+              ><span><i class="fa-solid fa-angle-right"></i></span>Customer
+              Service
+            </a>
+            <a class="d-block" href="#"
+              ><span><i class="fa-solid fa-angle-right"></i></span>Store
+              Locations
+            </a>
+          </div>
+          <div class="OpeningTime col-lg-2 p-0">
+            <h4>Opening Time</h4>
+            <div class="openine-info d-flex justify-content-between">
+              <div class="date">
+                <p>Mon - Tue:</p>
+                <p>Wed:</p>
+                <p>Fri:</p>
+                <p>Sat:</p>
+                <p>Sun:</p>
+              </div>
+              <div class="time">
+                <p>8AM - 10PM</p>
+                <p>8AM - 7PM</p>
+                <p>7AM - 12PM</p>
+                <p>9AM - 8PM</p>
+                <p>Closed</p>
+              </div>
+            </div>
+          </div>
+          <div class="ContactUs col-lg-3">
+            <h4>Contact Us</h4>
+            <div class="d-flex">
+              <div>
+                <span><i class="fa-solid fa-location-dot"></i></span>
+                <span><i class="fa-solid fa-phone"></i></span>
+                <span><i class="fa-solid fa-envelope"></i></span>
+              </div>
+              <div>
+                <p>830 Broadway,New York, NY 10003, United States</p>
+                <a href="tel:+18008660286">+18008660286</a>
+                <a href="mailto:aetor.info@gmail.com,mailto:info@aetor.com">
+                  aetor.info@gmail.com <br />
+                  info@aetor.com
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="NewsLetter col-lg-3 p-0">
+            <h4>News Letter</h4>
+            <p>
+              Authoritatively morph 24/7 potentialities with error-free
+              partnerships.
+            </p>
+            <form class="d-flex">
+              <div class="input-field">
+                <input type="email" placeholder="Enter your email...." />
+              </div>
+              <div class="subscrib">
+                <button>Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="container">
+          <p>
+            &copy;2022 All Rights Reserved <strong>Aytor</strong> By
+            <strong>Angfuzsoft.</strong>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer section end  -->
+
+    <!-- jquary  -->
+    <script src="./assets/js/jquery-1.12.4.min.js"></script>
+    <!-- typed js  -->
+    <script src="./assets/js/typed.umd.js"></script>
+    <!-- venobox js  -->
+    <script src="./assets/js/venobox.min.js"></script>
+    <!-- xzoom js  -->
+    <script src="./assets/js/xzoom.min.js"></script>
+    <!-- slick slider js  -->
+    <script src="./assets/js/slick.min.js"></script>
+    <!-- counter up js  -->
+    <script src="./assets/js/jquery.counterup.min.js"></script>
+ <!-- country select js   -->
+    <script src="./assets/js/countrySelect.min.js"></script>
+    <!-- waypoint js -->
+    <script src="./assets/js/waypoints.min.js"></script>
+    <!-- The final coundown js  -->
+    <script src="./assets/js/jquery.countdown.min.js"></script>
+    <!-- aos js  -->
+    <script src="./assets/js/aos.js"></script>
+    <!-- Bootstrap js  -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <!-- custom js  -->
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>

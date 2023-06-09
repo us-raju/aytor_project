@@ -1,0 +1,133 @@
+//footer section start
+footer {
+  z-index: -1;
+  background-color: $TextColor;
+  .top {
+    padding: 150px 0 75px 0;
+    border-bottom: 1px solid $lightColor;
+    .social-icon {
+      ul li {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        margin: 0 5px;
+        background-color: $lightColor;
+        a {
+          width: 100%;
+          color: $ParagraphColor;
+          display: inline-block;
+          transition: 0.5s;
+        }
+        &:hover a{
+          background-color: $praimaryColor;
+          color: $lightColor;
+        }
+      }
+    }
+  }
+  .mid {
+    padding: 70px 0 75px 0;
+    h4 {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 34px;
+      color: $lightColor;
+      padding-bottom: 22px;
+      text-align: start;
+    }
+
+    .account,
+    .Support {
+      // margin: 0 10px;
+      a {
+        font-family: $secoundryFont;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: $lightColor;
+        transition: 0.5s;
+        span {
+          padding-right: 7px;
+        }
+        &:hover {
+          color: $praimaryColor;
+          // padding-left: 10px;
+        }
+      }
+    }
+    .OpeningTime {
+      .date {
+        font-family: $secoundryFont;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 28px;
+        color: $lightColor;
+      }
+      .time {
+        line-height: 28px;
+        color: $lightColor;
+      }
+    }
+    .ContactUs {
+      span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        line-height: 24px;
+        font-size: 14px;
+        text-align: center;
+        color: $praimaryColor;
+        margin-bottom: 20px;
+        &:nth-child(2n) {
+          padding-top: 15px;
+        }
+      }
+      p,
+      a {
+        display: inline;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: $lightColor;
+      }
+    }
+    .NewsLetter {
+      p {
+        line-height: 28px;
+        color: $lightColor;
+        padding-bottom: 23px;
+      }
+      .input-field {
+        input {
+          padding: 8px 0px;
+        }
+      }
+      .subscrib {
+        button {
+          background-color: $praimaryColor;
+          border: none;
+          color: $lightColor;
+          padding: 10px 15px;
+          transition: .5s;
+          &:hover{
+            background: $blackColor;
+          }
+        }
+      }
+    }
+  }
+  .bottom {
+    background: #32363e;
+    padding: 28px 0;
+    p {
+      line-height: 28px;
+      text-align: center;
+      color: $lightColor;
+      strong {
+        color: $praimaryColor;
+      }
+    }
+  }
+}
+// footer section end

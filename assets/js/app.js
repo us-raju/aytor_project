@@ -65,10 +65,10 @@ $(function () {
   // latest_news section end
 
   // counter up js start
-  // $(".counter").counterUp({
-  //   delay: 10,
-  //   time: 1000,
-  // });
+  $(".counter").counterUp({
+    delay: 10,
+    time: 1000,
+  });
   // counter up js end
 
   // leadership section start
@@ -80,10 +80,10 @@ $(function () {
   });
   // leadership section end
 
-  // Avater section start 
+  // Avater section start
   $(".avater_slider").slick({
     arrows: false,
-    autoplay:true,
+    autoplay: true,
     asNavFor: ".avater_slider_nav",
   });
   $(".avater_slider_nav").slick({
@@ -96,20 +96,99 @@ $(function () {
   });
   // Avater section end
 
-  // Aytor instagram section start 
+  // Aytor instagram section start
   $(".aytor_insta_slider").slick({
     slidesToShow: 5,
-    arrows:false,
+    arrows: false,
+    dots: true,
+    dotsClass: "dots_style",
   });
-  // Aytor instagram section end 
+  // Aytor instagram section end
+
+  // product details section start
+  $(".product_thumb_slider").slick({
+    slidesToShow: 1,
+    // slideToScroll:1,
+    arrows: false,
+    asNavFor: ".product_thumb_slider_nav",
+    autoplay: true,
+    fade:true,
+  });
+  $(".product_thumb_slider_nav").slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    asNavFor: ".product_thumb_slider",
+    centerMode: true,
+    focusOnSelect: true,
+    centerPadding: "0px",
+
+    prevArrow: '<i class="product_nav_arrows fa-solid fa-angle-left"></i>',
+    nextArrow: '<i class="product_nav_arrows fa-solid fa-angle-right"></i>',
+  });
+
+  // $(".xzoom").xzoom({
+  //   lens: true,
+  //   position: "right",
+  // });
+
+  // product details section end
+
+// Releted_Products section start 
+  $(".Releted_Products_slider").slick({
+    slidesToShow: 4,
+    slideToScroll:1,
+    prevArrow: '<i class="RP_arrows fa-solid fa-angle-left"></i>',
+    nextArrow: '<i class="RP_arrows fa-solid fa-angle-right"></i>',
+  });
+// Releted_Products section end
+  
+// country select js start
+  $("#country_selector").countrySelect({
+    // defaultCountry: "Ban",
+  });
+// country select js end
+
+// blog silder js start 
+  $(".blog_slider_item").slick({
+    autoplay: true,
+    autoplaySpeed: 2000,
+    prevArrow: '<i class="blog_slider_arrows fa-solid fa-angle-left"></i>',
+    nextArrow: '<i class="blog_slider_arrows fa-solid fa-angle-right"></i>',
+  });
+// blog silder js end 
+
 });
 AOS.init({
   // initClassName: "aos-init",
   // animatedClassName: "aos-animate",
 });
+
+// use product tooltip
 const tooltipTriggerList = document.querySelectorAll(
   '[data-bs-toggle="tooltip"]'
 );
 const tooltipList = [...tooltipTriggerList].map(
   (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
 );
+// use product tooltip
+
+// cart plus_minus js
+// let minus_btn = document.getElementById("cart_minus_btn");
+// let plus_btn = document.getElementById("cart_plus_btn");
+// let cart_value = document.getElementById("cart_value");
+
+// function minus_btn(btn_id) {
+//   if (cart_value.value < 2) {
+//     document.getElementById(btn_id).setAttribute("disabled", true);
+//   } else {
+//     cart_value.value--;
+//   }
+// }
+// function plus_btn() {
+//   cart_value.value++;
+//   if (cart_value.value > 1) {
+//     minus_btn.removeAttribute("disabled");
+//   }
+// }
+
+// cart plus_minus js

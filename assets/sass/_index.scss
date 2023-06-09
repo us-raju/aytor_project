@@ -333,6 +333,9 @@
   .product_item {
     margin-bottom: 40px;
   }
+  .anchor{
+    margin: auto;
+  }
 }
 // Best Seller Products section end
 
@@ -343,6 +346,8 @@
     padding-bottom: 40px;
   }
   .deals_timer {
+    background-color: $lightColor;
+    transform: translateY(50px);
     box-shadow: $shadow2;
     border-radius: 40px;
     padding: 14px 50px;
@@ -370,7 +375,10 @@
     }
   }
   .deals_slider {
-    padding-top: 40px;
+    box-shadow: $shadow2;
+    padding: 70px 30px;
+    position: relative;
+    z-index: -99;
     .deals_slider_item {
       height: 485px;
       background-position: center;
@@ -427,7 +435,7 @@
       }
     }
     .dots_style {
-      bottom: -40px;
+      bottom: 28px;
       left: 50%;
       transform: translateX(-50%);
       li {
@@ -550,323 +558,3 @@
 }
 // Latest News section end
 
-// ABOUT PAGE START
-// about banner section start
-#about-banner {
-  height: 400px;
-  background-image: url(../images/breadcumb_bg_about.jpg);
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  z-index: 1;
-  &::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: -1;
-  }
-}
-// about banner section end
-
-// about ayotor section start
-#about-aytor {
-  padding: 100px 0;
-  .about-inner-container {
-    background: $bgColor;
-    // clip-path: polygon(0 0, 70% 0%, 100% 0, 100% 70%, 100% 100%, 30% 100%, 0% 70%, 0% 30%);
-    .about-aytor-img {
-      padding: 40px 0;
-      position: relative;
-      z-index: 99;
-      &::before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: -60px;
-        width: 284px;
-        height: 313px;
-        border: 15px solid $BackgroundColor;
-        z-index: -1;
-        animation: moving 2s infinite linear alternate;
-      }
-      @keyframes moving {
-        0% {
-          left: 0px;
-        }
-        100% {
-          left: -60px;
-        }
-      }
-    }
-    .about-aytor-content {
-      padding: 80px 0 0 95px;
-      .about-aytor-text {
-        border-bottom: 1px solid #bdbdbd;
-        margin-bottom: 29px;
-        h3 {
-          font-weight: 700;
-          font-size: 36px;
-          line-height: 46px;
-          color: $TextColor;
-          margin-bottom: 10px;
-        }
-        p {
-          line-height: 28px;
-          color: $ParagraphColor;
-          padding-bottom: 28px;
-        }
-      }
-      .check-mark-list {
-        ul {
-          margin-bottom: 34px;
-          li {
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 28px;
-            font-family: $secoundryFont;
-            color: $ParagraphColor;
-            span {
-              color: $praimaryColor;
-            }
-          }
-        }
-      }
-      .anchor {
-        text-align: left;
-      }
-    }
-  }
-}
-// about ayotor section end
-
-// count section start
-#count {
-  padding: 0 0 100px 0;
-  .count_item {
-    .count_inner_item {
-      .count_img {
-        width: 100px;
-        height: 100px;
-        line-height: 100px;
-        text-align: center;
-        // background-color: $praimaryColor;
-        border-radius: 50%;
-        // color: $PrimaryColor3;
-      }
-      .counter {
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 46px;
-        // text-align: center;
-        color: $praimaryColor;
-      }
-      p {
-        line-height: 28px;
-        // text-align: center;
-        color: $ParagraphColor;
-      }
-    }
-  }
-}
-// count section end
-
-// our story section start
-#our_story {
-  position: relative;
-  padding: 100px 0;
-  background: $bgColor;
-  .our_story_contant {
-    h2 {
-      font-weight: 700;
-      font-size: 36px;
-      line-height: 46px;
-      color: $TextColor;
-      margin-bottom: 1px;
-    }
-    p {
-      line-height: 28px;
-      color: $ParagraphColor;
-      &:last-child {
-        padding-top: 14px;
-      }
-    }
-  }
-  .our_story_img {
-    position: absolute;
-    inset: 0 0 0 50%;
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
-    }
-  }
-}
-// our story section end
-
-// help section start
-#help {
-  .help_inner_container {
-    box-shadow: none;
-    transform: translateY(none);
-  }
-}
-// help section end
-
-// leadership section start
-#leadership {
-  padding: 100px 0;
-  .heading {
-    padding-bottom: 26px;
-  }
-  .team_slider {
-    .team_slider_arrows.fa-caret-left,
-    .team_slider_arrows.fa-caret-right {
-      position: absolute;
-      top: 50%;
-      // left: 0;
-      transform: translateY(-50%);
-      width: 34px;
-      height: 34px;
-      line-height: 34px;
-      text-align: center;
-      color: #828282;
-      background-color: $lightColor;
-      border: 1px solid #828282;
-      border-radius: 50%;
-      z-index: 99;
-      transition: 0.5s;
-      &:hover {
-        background-color: $praimaryColor;
-        color: $lightColor;
-        border: none;
-      }
-    }
-    .team_slider_arrows.fa-caret-left {
-      left: -10px;
-    }
-    .team_slider_arrows.fa-caret-right {
-      right: -10px;
-    }
-    .team_slider_item {
-      // display: inline-block;
-      .team_img{
-        
-      }
-      .team_info {
-        h4 {
-          padding-top: 25px;
-          font-weight: 600;
-          font-size: 20px;
-          line-height: 30px;
-          // text-align: center;
-          color: $TextColor;
-        }
-        p {
-          line-height: 28px;
-          color: $praimaryColor;
-          // text-align: center;
-          margin: 6px 0 10px 0;
-        }
-        ul li {
-          margin: 0 5px;
-          a {
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-            line-height: 20px;
-            text-align: center;
-            color: $ParagraphColor;
-            padding: 2.5px;
-            transition: 0.5s;
-          }
-          &:hover a {
-            color: $praimaryColor;
-          }
-        }
-      }
-    }
-  }
-}
-// leadership section end
-
-// Avater section start
-#avater {
-  background-color: red;
-  position: relative;
-  .avater_img {
-    margin-bottom: 25px;
-  }
-  .avater_slider {
-    .avater_slider_item {
-      .avater_slider_img {
-        width: 100px;
-        height: 100px;
-        line-height: 100px;
-        margin: auto;
-        margin-bottom: 20px;
-        img {
-          border-radius: 50%;
-        }
-      }
-      .avater_info {
-        p {
-          line-height: 28px;
-          text-align: center;
-          color: $ParagraphColor;
-          margin-bottom: 10px;
-          // width: 571px;
-        }
-        h4 {
-          font-weight: 700;
-          font-size: 24px;
-          line-height: 34px;
-          text-align: center;
-          color: $TextColor;
-        }
-        h5 {
-          line-height: 28px;
-          font-weight: 400;
-          color: $praimaryColor;
-          text-align: center;
-        }
-      }
-    }
-  }
-
-  .avater_slider_nav {
-    position: static;
-    .slick-list.draggable,
-    .slick-track {
-      position: static;
-      overflow: visible;
-      transform: initial !important;
-    }
-    .avater_slider_nav_img {
-      position: absolute;
-      transition: 0.5s;
-      top: 0;
-      left: 0;
-    }
-  }
-}
-// Avater section end
-
-// Aytor instagram section start 
-#aytor_insta{
-  padding: 100px 0;
-  .heading{
-    margin-bottom: 26px;
-  }
-  // .aytor_insta_slider{
-  //   .aytor_insta_item{
-  //    .aytor_insta_gallery{
-
-  //    }
-  //   }
-  // }
-}
-// Aytor instagram section end 
-
-// ABOUT PAGE END

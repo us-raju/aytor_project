@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>checkout</title>
+    <!-- Google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- slick slider css  -->
+    <link rel="stylesheet" href="./assets/css/slick.min.css" />
+    <!-- fontawesome css  -->
+    <link rel="stylesheet" href="./assets/css/all.min.css" />
+    <!-- venobox css  -->
+    <link rel="stylesheet" href="./assets/css/venobox.min.css" />
+   <!-- country select css  -->
+    <link rel="stylesheet" href="./assets/css/countrySelect.min.css">
+    <!-- xzoom css  -->
+    <link rel="stylesheet" href="./assets/css/xzoom.min.css" />
+    <!-- aos css  -->
+    <link rel="stylesheet" href="./assets/css/aos.css" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <!-- custom css  -->
+    <link rel="stylesheet" href="./assets/css/style.min.css" />
+    <!-- Resposnive css  -->
+    <link rel="stylesheet" href="./assets/responsive/responsive.css" />
+  </head>
+  <body>
+    <!-- Header section start  -->
+    <header>
+      <div class="container">
+        <div class="head_contant d-flex justify-content-between">
+          <div class="first">
+            <span><i class="fa-solid fa-paper-plane"></i></span>
+            <p>FREE SHIPING world wide for all orders over <ins>$150</ins></p>
+          </div>
+          <div class="last d-flex">
+            <div class="track-order">
+              <p>Track Your Order</p>
+            </div>
+            <div class="language">
+              <p>English</p>
+            </div>
+            <div class="currency">
+              <p>USD</p>
+            </div>
+            <div class="s-icon">
+              <ul class="d-flex">
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header section end  -->
+
+    <!-- nav section start  -->
+    <nav id="nav" class="navbar navbar-expand-lg">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <img src="./assets/images/aytor_logo.png" alt="" class="img-fluid" />
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav-menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav-menu">
+          <ul class="navbar-nav mx-auto">
+            <li>
+              <a class="nav-link" href="index.html">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shop.html">Shop </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pages </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blogs </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="fa-icon">
+          <ul class="d-flex">
+            <li>
+              <a href="#"
+                ><i id="m-glass" class="fa-solid fa-magnifying-glass"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-regular fa-user"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-regular fa-heart"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- nav section end  -->
+
+    <!-- checkout banner section start  -->
+    <div id="checkout_banner">
+      <div class="container">
+        <div class="page-heading">
+          <h1>Checkout</h1>
+          <p><a href="index.html">Home</a> / Checkout</p>
+        </div>
+      </div>
+    </div>
+    <!-- checkout banner section end  -->
+
+    <!-- from info section start  -->
+    <section id="address">
+      <div class="container">
+        <div class="cupon">
+          <span><i class="fa-solid fa-circle-exclamation"></i></span>
+          <p>Have a coupon?</p>
+          <a href="#">Click here to enter your code</a>
+        </div>
+        <div class="form-section row">
+          <div class="Billing_Information col-lg-6">
+            <div class="tital">
+              <h4>Billing Information</h4>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <label>First Name*</label>
+                <input type="text" placeholder="Your first name..." />
+              </div>
+              <div class="col-lg-6">
+                <label>Last Name*</label>
+                <input type="text" placeholder="Your last name..." />
+              </div>
+            </div>
+            <div>
+              <label>Company name (optional)*</label><br />
+              <input type="text" placeholder="Name..." />
+            </div>
+            <div>
+              <label>Email*</label><br />
+              <input type="email" placeholder="youremail@gmail.com" />
+            </div>
+            <div>
+              <label>Telephone*</label><br />
+              <input type="tel" placeholder="+123..." />
+            </div>
+            <div>
+              <label for="country">Country*</label><br />
+              <input type="text" id="country_selector">
+              <!-- <select name="country" id="country">
+                <option selected>Select...</option>
+                <option>United Kingdom (UK)</option>
+                <option>United State (US)</option>
+                <option>Bangladesh</option>
+                <option>Australia</option>
+                <option>Garmany</option>
+              </select> -->
+            </div>
+            <div>
+              <label>Street address*</label><br />
+              <input type="text" placeholder="House and street name..." /><br />
+              <input
+                type="text"
+                placeholder="Apartment, suite, unit, etc. (optional)"
+              />
+            </div>
+            <div>
+              <label for="city">Town / City*</label><br />
+              <select name="city" id="city">
+                <option selected>Select</option>
+                <optgroup label="Bangladesh">
+                  <option>Dhaka</option>
+                  <option>Chattgram</option>
+                  <option>Khulna</option>
+                  <option>Comilla</option>
+                  <option>Rajshahi</option>
+                </optgroup>
+                <optgroup label="United Kingdom (UK)">
+                  <option>Leicestershire</option>
+                  <option>Derbyshire</option>
+                  <option>West Sussex</option>
+                  <option>Nottinghamshire</option>
+                  <option>Worcestershire</option>
+                </optgroup>
+                <optgroup label="United State (US)">
+                  <option>New York</option>
+                  <option>Los Angeles</option>
+                  <option>Chicago</option>
+                  <option>Houston</option>
+                  <option>Phoenix</option>
+                </optgroup>
+                <optgroup label="Australia">
+                  <option>Perth</option>
+                  <option>Canberra</option>
+                  <option>Adelaide</option>
+                  <option>Brisbane</option>
+                  <option>Hobart</option>
+                </optgroup>
+                <optgroup label="Garmany">
+                  <option>Dortmund</option>
+                  <option>Stuttgart</option>
+                  <option>Munich</option>
+                  <option>Hamburg</option>
+                  <option>Berlin</option>
+                </optgroup>
+              </select>
+            </div>
+            <div>
+              <label>Post Code*</label><br />
+              <input type="text" placeholder="Code..." />
+            </div>
+          </div>
+          <div class="Additional_Information col-lg-6">
+            <div class="tital">
+              <h4>Additional Information</h4>
+            </div>
+            <label>Order notes (optional)*</label><br />
+            <textarea
+              placeholder="Notes about your order, e.g. special notes for delivery."
+            ></textarea>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- from info section end  -->
+
+    <!-- your order section start  -->
+    <section id="your_order">
+      <div class="container">
+        <div class="tital">
+          <h4>your order</h4>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <td style="width: 20%">Image</td>
+              <td style="width: 25%">Product Name</td>
+              <td style="width: 15%">Price/Unit</td>
+              <td style="width: 20%">Quantity</td>
+              <td style="width: 20%">Total</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="width:15%;">
+                <img src="./assets/images/cart-img-1-1.jpg" alt="" class="img-fluid">
+              </td>
+              <td style="width:30% ;">
+                Jacket Hoodie Sweater
+              </td>
+              <td style="width:15% ;">
+                $130.00
+              </td>
+              <td style="width:25% ;">
+                     <button
+                    type="button"
+                    id="cart_minus_btn"
+                    onclick="minus_btn('minus_btn')"
+                  >
+                    <i class="fa-solid fa-minus"></i>
+                  </button>
+                  <input
+                    type="text"
+                    placeholder=""
+                    value="1"
+                    min="1"
+                    id="cart_value"
+                  />
+                  <button
+                    type="button"
+                    id="cart_plus_btn"
+                    onclick="plus_btn()"
+                  >
+                    <i class="fa-solid fa-plus"></i>
+                  </button>
+                </div>
+              </td>
+              <td style="width:15% ;">$130.00</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      <div class="bill_info">
+          <div class="d-flex">
+              <div class="bill"><h6>Subtotal</h6></div>
+              <div class="bill_price"><p>$130.00</p></div>
+            </div>
+        <div class="d-flex">
+              <div class="bill"><h6>Total</h6></div>
+              <div class="bill_price"><p>$130.00</p></div>
+            </div>
+      </div>
+            <div class="your_order_details">
+              <div>
+                <input type="checkbox">
+                <h5>Direct bank transfer</h5>
+              </div>
+              <div>
+                <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.</p>
+              </div>
+              <div>
+                <input type="checkbox">
+                <h5>Check payments</h5>
+              </div>
+              <div>
+                <p>Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</p>
+              </div>
+              <div>
+                <input type="checkbox">
+                <h5>Cash on delivery</h5>
+              </div>
+              <div>
+                <p>Pay with cash upon delivery.</p>
+              </div>
+              <div class="praivcy_policy">
+                <p>Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our <a href="#"> privacy policy.</a></p>
+              </div>
+              <div class="anchor">
+                <a href="#">Place Order</a>
+              </div>
+            </div>
+      </div>
+    </section>
+    <!-- your order section end  -->
+
+     <!-- promotion section start  -->
+    <section id="promotion">
+        <div class="container">
+            <div class="row promotion-inner-container">
+                <div class="promotion-content col-lg-3 d-flex">
+                    <div class="promotion-img">
+                        <img src="./assets/images/truck.png" alt="">
+                    </div>
+                    <div class="promotion-info">
+                        <h6>FREE SHIPING</h6>
+                        <p>All orders over $150</p>
+                    </div>
+                </div>
+                <div class="promotion-content col-lg-3 d-flex">
+                    <div class="promotion-img">
+                        <img src="./assets/images/truck.png" alt="">
+                    </div>
+                    <div class="promotion-info">
+                        <h6>QUICK PAYMENT</h6>
+                        <p>100% secure payment</p>
+                    </div>
+                </div>
+                <div class="promotion-content col-lg-3 d-flex">
+                    <div class="promotion-img">
+                        <img src="./assets/images/truck.png" alt="">
+                    </div>
+                    <div class="promotion-info">
+                        <h6>FREE RETURNS</h6>
+                        <p>Return money within 30 days</p>
+                    </div>
+                </div>
+                <div class="promotion-content col-lg-3 d-flex">
+                    <div class="promotion-img">
+                        <img src="./assets/images/truck.png" alt="">
+                    </div>
+                    <div class="promotion-info">
+                        <h6>24/7 SUPPORT</h6>
+                        <p>Quick Support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- promotionsection end  -->
+
+    <!-- footer section start  -->
+    <footer>
+      <div class="container">
+        <div class="top d-flex justify-content-between align-items-center">
+          <div class="social-icon">
+            <ul class="d-flex">
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="aytor-logo">
+            <img
+              src="./assets/images/white-logo.png"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div class="credit-card">
+            <img
+              src="./assets/images/major-credit-card-logo-transparent-thumb 1.jpg"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+        </div>
+        <div class="mid row">
+          <div class="account col-lg-2 p-0">
+            <h4>My Account</h4>
+            <a class="d-block" href="#"
+              ><span><i class="fa-solid fa-angle-right"></i></span>My Account
+            </a>
+            <a class="d-block" href="#"
+              ><span><i class="fa-solid fa-angle-right"></i></span>View Cart
+            </a>
+            <a class="d-block" href="#"
+              ><span><i class="fa-solid fa-angle-right"></i></span>Wishlist
+            </a>
+            <a class="d-block" href="#"
+              ><span><i class="fa-solid fa-angle-right"></i></span>Compare
+            </a>
+            <a class="d-block" href="#"
+              ><span><i class="fa-solid fa-angle-right"></i></span>New Products
+            </a>
+          </div>
+          <div class="Support col-lg-2 p-0">
+            <h4>Support</h4>
+            <a class="d-block" href="#"
+              ><span><i class="fa-solid fa-angle-right"></i></span>Help
+            </a>
+            <a class="d-block" href="#"
+              ><span><i class="fa-solid fa-angle-right"></i></span>Contact Us
+            </a>
+            <a class="d-block" href="#"
+              ><span><i class="fa-solid fa-angle-right"></i></span>Feedback</a
+            >
+            <a class="d-block" href="#"
+              ><span><i class="fa-solid fa-angle-right"></i></span>Customer
+              Service
+            </a>
+            <a class="d-block" href="#"
+              ><span><i class="fa-solid fa-angle-right"></i></span>Store
+              Locations
+            </a>
+          </div>
+          <div class="OpeningTime col-lg-2 p-0">
+            <h4>Opening Time</h4>
+            <div class="openine-info d-flex justify-content-between">
+              <div class="date">
+                <p>Mon - Tue:</p>
+                <p>Wed:</p>
+                <p>Fri:</p>
+                <p>Sat:</p>
+                <p>Sun:</p>
+              </div>
+              <div class="time">
+                <p>8AM - 10PM</p>
+                <p>8AM - 7PM</p>
+                <p>7AM - 12PM</p>
+                <p>9AM - 8PM</p>
+                <p>Closed</p>
+              </div>
+            </div>
+          </div>
+          <div class="ContactUs col-lg-3">
+            <h4>Contact Us</h4>
+           <div class="d-flex">
+             <div>
+              <span><i class="fa-solid fa-location-dot"></i></span>
+              <span><i class="fa-solid fa-phone"></i></span>
+               <span><i class="fa-solid fa-envelope"></i></span>
+            </div>
+            <div>
+              <p>830 Broadway,New York, NY 10003, United States</p>
+              <a href="tel:+18008660286">+18008660286</a>
+               <a href="mailto:aetor.info@gmail.com,mailto:info@aetor.com">
+                aetor.info@gmail.com <br />
+                info@aetor.com
+              </a>
+            </div>
+           </div>
+          </div>
+          <div class="NewsLetter col-lg-3 p-0">
+            <h4>News Letter</h4>
+            <p>
+              Authoritatively morph 24/7 potentialities with error-free
+              partnerships.
+            </p>
+            <form class="d-flex">
+              <div class="input-field">
+                <input type="email" placeholder="Enter your email...." />
+              </div>
+              <div class="subscrib">
+                <button>Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="container">
+          <p>
+            &copy;2022 All Rights Reserved <strong>Aytor</strong> By
+            <strong>Angfuzsoft.</strong>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer section end  -->
+
+    <!-- jquary  -->
+    <script src="./assets/js/jquery-1.12.4.min.js"></script>
+    <!-- typed js  -->
+    <script src="./assets/js/typed.umd.js"></script>
+    <!-- venobox js  -->
+    <script src="./assets/js/venobox.min.js"></script>
+    <!-- xzoom js  -->
+    <script src="./assets/js/xzoom.min.js"></script>
+    <!-- country select js   -->
+    <script src="./assets/js/countrySelect.min.js"></script>
+    <!-- slick slider js  -->
+    <script src="./assets/js/slick.min.js"></script>
+    <!-- counter up js  -->
+    <script src="./assets/js/jquery.counterup.min.js"></script>
+    <!-- waypoint js -->
+    <script src="./assets/js/waypoints.min.js"></script>
+    <!-- The final coundown js  -->
+    <script src="./assets/js/jquery.countdown.min.js"></script>
+    <!-- aos js  -->
+    <script src="./assets/js/aos.js"></script>
+    <!-- Bootstrap js  -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <!-- custom js  -->
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>

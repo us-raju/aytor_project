@@ -1,0 +1,126 @@
+// compare banner section start
+#compare {
+  height: 400px;
+  background-image: url(../images/breadcumb_bg_compare.jpg);
+  background-position: center !important;
+  background-size: cover !important;
+  position: relative;
+  z-index: 1;
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+  }
+}
+// compare banner section end
+
+// compare product section start
+#compare_product {
+  padding-top: 100px;
+  .compare_seacrh_box {
+    position: relative;
+    input {
+      width: 100%;
+      height: 50px;
+      background-color: $bgColor;
+      border: 1px solid #e0e0e0;
+    }
+    span {
+      position: absolute;
+      right: 44px;
+      top: 15px;
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      line-height: 24px;
+      text-align: center;
+      color: $praimaryColor;
+      border-left: 1px solid $praimaryColor;
+      padding-left: 22px;
+      cursor: pointer;
+    }
+  }
+  .compare_product_box {
+    .compare_table {
+      border: 1px solid #e0e0e0;
+      width: 100%;
+      p {
+        line-height: 26px;
+        color: $ParagraphColor;
+      }
+      tr {
+        border: 1px solid #e0e0e0;
+        td {
+          border: 1px solid #e0e0e0;
+          text-align: center;
+          padding: 40px 0;
+          a {
+            display: inline-block;
+            color: $praimaryColor;
+            transition: 0.5s;
+            &:hover {
+              color: $blackColor;
+            }
+          }
+          h5 {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 28px;
+            color: $TextColor;
+          }
+        }
+      }
+      .product_compare {
+        p {
+          line-height: 26px;
+          color: $TextColor;
+          transition: 0.5s;
+          &:hover {
+            color: $praimaryColor;
+          }
+        }
+      }
+      .Description {
+        p {
+          line-height: 28px;
+          color: $ParagraphColor;
+        }
+      }
+      .Price_compare {
+        line-height: 26px;
+        color: $ParagraphColor;
+      }
+      .rating_compare {
+        span {
+          color: $praimaryColor;
+        }
+      }
+      .Stock {
+        span {
+          color: green;
+        }
+      }
+      .Stock {
+        a {
+          display: inline-block;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 28px;
+          text-align: center;
+          color: $lightColor;
+          background: $praimaryColor;
+          padding: 13px 27px;
+          transition: 0.5s;
+          &:hover {
+            background: $blackColor;
+            color: $lightColor;
+          }
+        }
+      }
+    }
+  }
+}
+
+// compare product section end

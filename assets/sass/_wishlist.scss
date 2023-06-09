@@ -1,0 +1,58 @@
+// wishlist banner section start
+#wishlist-banner {
+  height: 400px;
+  background-image: url(../images/breadcumb_bg_wishlist.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+  }
+}
+// wishlist banner section end
+
+// wishlist table section start
+#wishlist-table {
+    padding: 100px 0 50px 0;
+  table {
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    thead {
+      border-bottom: 2px solid $praimaryColor;
+      background: $bgColor;
+      td {
+        padding: 20px 0;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 28px;
+        // color: $textColor;
+        &:first-child{
+            padding-left: 140px;
+        }
+      }
+    }
+    tbody{
+        color: $ParagraphColor;
+       tr{
+        border: 1px solid #e0e0e0;
+        td{
+            padding: 20px 0;
+        }
+        .stock{
+            span{
+                color: green;
+            }
+        }
+         .cross{
+            margin-left: 50%;
+        }
+       }
+    }
+  }
+}
+// wishlist table section end

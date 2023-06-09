@@ -183,6 +183,7 @@ body {
 // common button style start
 .anchor {
   text-align: center;
+  // width: 50%;
   a {
     display: inline-block;
     font-weight: 600;
@@ -245,23 +246,33 @@ body {
     transform: scale(0);
     animation: animate-btn2 2s infinite linear;
   }
+  &:hover::after{
+    background-color: $praimaryColor;
+  }
+  &:hover::before{
+    background-color: $praimaryColor;
+  }
 }
 @keyframes animate-btn {
   0% {
     transform: scale(1);
+    opacity: 1;
   }
 
   100% {
     transform: scale(1.5);
+    opacity: 0;
   }
 }
 @keyframes animate-btn2 {
   0% {
     transform: scale(1.5);
+    opacity: 1;
   }
 
   100% {
     transform: scale(2);
+    opacity: 0;
   }
 }
 // common play button end
@@ -334,181 +345,47 @@ body {
 
 // common product hover effcet end
 
-// common help section start
-#help {
-  .help_inner_container {
-    padding: 45px 38px;
-    background-color: $lightColor;
+// common promotion section start
+#promotion {
+  padding: 100px 0 0 0;
+  transform: translateY(66px);
+  .promotion-inner-container {
+    background: $lightColor;
+    padding: 40px 0;
     box-shadow: $shadow2;
-    transform: translateY(80px);
-    z-index: 99;
-    .help-item {
-      border-right: 5px solid $bgColor;
-      // height: 100%;
+    .promotion-content {
+      text-align: center;
+      border-right: 2px solid $BackgroundColor;
+      justify-content: space-evenly;
       &:last-child {
         border-right: none;
       }
-      .help-img {
+      .promotion-img {
+        text-align: center;
         width: 70px;
         height: 70px;
         line-height: 70px;
-        text-align: center;
+        font-size: 25px;
         border-radius: 50%;
         background-color: $praimaryColor;
         color: $lightColor;
-        margin-right: 5px;
       }
-      .help-text {
-        h4 {
+      .promotion-info {
+        h6 {
           font-weight: 600;
-          font-size: 20px;
-          line-height: 30px;
+          font-size: 20;
           color: $TextColor;
         }
         p {
-          line-height: 28px;
+          line-height: 26px;
           color: $ParagraphColor;
-          strong {
-            color: $praimaryColor;
-          }
         }
       }
     }
   }
 }
-// common help section end
 
-// common footer section start
-footer {
-  z-index: -1;
-  background-color: $TextColor;
-  .top {
-    padding: 150px 0 75px 0;
-    border-bottom: 1px solid $lightColor;
-    .social-icon {
-      ul li {
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
-        text-align: center;
-        margin: 0 5px;
-        background-color: $lightColor;
-        transition: 0.5s;
-        a {
-          color: $ParagraphColor;
-          display: inline-block;
-          transition: 0.5s;
-          &:hover {
-            color: $lightColor;
-          }
-        }
-        &:hover {
-          background-color: $praimaryColor;
-        }
-      }
-    }
-  }
-  .mid {
-    padding: 70px 0 75px 0;
-    h4 {
-      font-weight: 700;
-      font-size: 24px;
-      line-height: 34px;
-      color: $lightColor;
-      padding-bottom: 22px;
-      text-align: start;
-    }
-
-    .account,
-    .Support {
-      // margin: 0 10px;
-      a {
-        font-family: $secoundryFont;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 28px;
-        color: $lightColor;
-        transition: 0.5s;
-        span {
-          padding-right: 7px;
-        }
-        &:hover {
-          color: $praimaryColor;
-          // padding-left: 10px;
-        }
-      }
-    }
-    .OpeningTime {
-      .date {
-        font-family: $secoundryFont;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 28px;
-        color: $lightColor;
-      }
-      .time {
-        line-height: 28px;
-        color: $lightColor;
-      }
-    }
-    .ContactUs {
-      span {
-        display: inline-block;
-        width: 24px;
-        height: 24px;
-        line-height: 24px;
-        font-size: 14px;
-        text-align: center;
-        color: $praimaryColor;
-        margin-bottom: 20px;
-        &:nth-child(2n) {
-          padding-top: 15px;
-        }
-      }
-      p,
-      a {
-        display: inline;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 28px;
-        color: $lightColor;
-      }
-    }
-    .NewsLetter {
-      p {
-        line-height: 28px;
-        color: $lightColor;
-        padding-bottom: 23px;
-      }
-      .input-field {
-        input {
-          padding: 8px 0px;
-        }
-      }
-      .subscrib {
-        button {
-          background-color: $praimaryColor;
-          border: none;
-          color: $lightColor;
-          padding: 10px 15px;
-        }
-      }
-    }
-  }
-  .bottom {
-    background: #32363e;
-    padding: 28px 0;
-    p {
-      line-height: 28px;
-      text-align: center;
-      color: $lightColor;
-      strong {
-        color: $praimaryColor;
-      }
-    }
-  }
-}
-// common footer section end
+// common promotion section end
 
 // common header start
 header {
@@ -542,13 +419,14 @@ header {
     .s-icon {
       // padding-left: 20px;
       ul li {
-        width: 20px;
-        height: 20px;
-        line-height: 20px;
         padding: 0px 10px;
         text-align: center;
         a {
           color: $lightColor;
+          transition: .5s;
+        }
+        &:hover a{
+          color: $praimaryColor;
         }
       }
     }
@@ -589,3 +467,34 @@ header {
   }
 }
 // page heading end
+
+// cart button style start
+.cart_section {
+  .quantity {
+    padding-bottom: 15px;
+    p {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 28px;
+      color: $TextColor;
+    }
+  }
+  .input-group {
+    button {
+      border-color: #e5e5e5;
+      border-radius: 0;
+      color: $ParagraphColor;
+      transition: 0.5s;
+      &:hover {
+        color: $praimaryColor;
+        background: none;
+      }
+    }
+    input {
+      width: 50px;
+      // height: 50px;
+      // line-height: 50px;
+    }
+  }
+}
+// cart button style end

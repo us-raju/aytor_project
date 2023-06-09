@@ -1,0 +1,133 @@
+// cart banner section start
+#cart_banner {
+  height: 400px;
+  background-image: url(../images/breadcumb_bg_cart.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+  }
+}
+// cart banner section end
+
+// cart table section start
+#cart_table {
+  padding-top: 100px;
+  table {
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    thead {
+      border-bottom: 2px solid $praimaryColor;
+      background: $bgColor;
+      td {
+        padding: 20px 0;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 28px;
+        text-align: center;
+        // color: $textColor;
+      }
+    }
+    tbody {
+      text-align: center;
+      tr {
+        td {
+          font-family: secoundryFont;
+          border: 1px solid #e0e0e0;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 28px;
+          a {
+            color: $praimaryColor;
+          }
+          button {
+            margin: 0 10px;
+            border: 1px solid #e0e0e0;
+            border-radius: 0;
+            padding: 8px 16px;
+            color: #bdbdbd;
+            border: 1px solid #e0e0e0;
+            background-color: $lightColor;
+            border-radius: 5px;
+          }
+          input {
+            width: 80px;
+            text-align: center;
+            color: $ParagraphColor;
+            background-color: $lightColor;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+  .cart_btn {
+    padding: 15px 0;
+    border: 1px solid #e0e0e0;
+    input {
+      width: 320px;
+      height: 50px;
+      margin: 0px 10px 0px 15px;
+      border: 1px solid #e0e0e0;
+    }
+    button {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 28px;
+      color: $lightColor;
+      background-color: $praimaryColor;
+      padding: 10px 20px;
+      border: none;
+      transition: 0.5s;
+      &:hover {
+        background-color: $blackColor;
+      }
+    }
+    .anchor {
+      margin-right: 20px;
+    }
+  }
+  .cart_total {
+    width: 50%;
+    margin-left: auto;
+    margin-top: 40px;
+    h4 {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 34px;
+      color: $TextColor;
+      margin-bottom: 20px;
+    }
+    table {
+      margin-bottom: 30px;
+      tr td {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: $ParagraphColor;
+        text-align: start;
+        padding: 16px 0px 16px 20px;
+      }
+      .total {
+        background-color: $bgColor;
+      }
+      .price {
+        transition: 0.5s;
+        &:hover {
+          color: $praimaryColor;
+        }
+      }
+    }
+  }
+  .anchor {
+    text-align: start;
+  }
+}
+// cart table section end
