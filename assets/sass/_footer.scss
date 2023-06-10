@@ -19,7 +19,7 @@ footer {
           display: inline-block;
           transition: 0.5s;
         }
-        &:hover a{
+        &:hover a {
           background-color: $praimaryColor;
           color: $lightColor;
         }
@@ -109,8 +109,8 @@ footer {
           border: none;
           color: $lightColor;
           padding: 10px 15px;
-          transition: .5s;
-          &:hover{
+          transition: 0.5s;
+          &:hover {
             background: $blackColor;
           }
         }
@@ -127,6 +127,28 @@ footer {
       strong {
         color: $praimaryColor;
       }
+    }
+  }
+  #backtoTop{
+    position: fixed;
+    bottom: 75px;
+    right: 50px;
+    border: 5px solid $lightColor;
+    background-color: $praimaryColor;
+    color: $lightColor;
+    border-radius: 50%;
+    font-size: 20px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    display: none;
+    cursor: pointer;
+    text-align: center;
+    z-index: 9999999999;
+    transition: .5s;
+    &:hover{
+      background-color: $PrimaryColor3;
+      border-color: $bgColor;
     }
   }
 }

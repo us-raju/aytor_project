@@ -1,4 +1,21 @@
 #nav {
+  &.active {
+    animation-name: fixedmenu;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+    position: fixed;
+    width: 100%;
+     background: $lightColor;
+    z-index: 999;
+  }
+  @keyframes fixedmenu {
+    from {
+      top: -100px;
+    }
+    to {
+      top: 0px;
+    }
+  }
   #nav-menu {
     ul li a {
       font-weight: 400;
@@ -25,12 +42,18 @@
       color: $PrimaryColor3;
       padding: 0px 12.5px;
       transition: 0.5s;
-      #m-glass {
-        transform: matrix(-1, 0, 0, 1, 0, 0);
-      }
       &:hover {
         color: $praimaryColor;
       }
+    }
+  }
+  #m-glass {
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    background: transparent;
+    border: none;
+    transition: 0.5s;
+    &:hover {
+      color: $praimaryColor;
     }
   }
 }

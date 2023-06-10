@@ -20,8 +20,8 @@
     <link rel="stylesheet" href="./assets/css/venobox.min.css" />
     <!-- xzoom css  -->
     <link rel="stylesheet" href="./assets/css/xzoom.min.css" />
-   <!-- country select css  -->
-    <link rel="stylesheet" href="./assets/css/countrySelect.min.css">
+    <!-- country select css  -->
+    <link rel="stylesheet" href="./assets/css/countrySelect.min.css" />
     <!-- aos css  -->
     <link rel="stylesheet" href="./assets/css/aos.css" />
     <!-- bootstrap css -->
@@ -82,9 +82,9 @@
         <div class="fa-icon">
           <ul class="d-flex">
             <li>
-              <a href="#"
-                ><i id="m-glass" class="fa-solid fa-magnifying-glass"></i
-              ></a>
+              <button id="m-glass">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
             </li>
             <li>
               <a href="#"><i class="fa-regular fa-user"></i></a>
@@ -101,14 +101,25 @@
     </nav>
 
     <!-- search box start -->
-    <!-- <div id="search-box">
-     <div class="search-feild">
-       <input type="text" placeholder="What are you looking for" />
-     </div>
-      <button type="submit">
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </button>
-    </div> -->
+    <div class="search-box">
+      <div class="container">
+        <div class="inner_container">
+          <div class="search-feild">
+            <input type="text" placeholder="What are you looking for" />
+          </div>
+          <div class="search_btn">
+            <button type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="close_btn">
+        <button>
+          <i class="fa-solid fa-close"></i>
+        </button>
+      </div>
+    </div>
     <!-- search box end -->
 
     <!-- nav section end  -->
@@ -1874,6 +1885,11 @@
             <strong>Angfuzsoft.</strong>
           </p>
         </div>
+      </div>
+      <div>
+       <button id="backtoTop">
+        <i class="fa-solid fa-arrow-up"></i>
+       </button>
       </div>
     </footer>
     <!-- footer section end  -->

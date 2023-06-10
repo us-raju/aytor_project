@@ -4,7 +4,57 @@ $(window).on("load", function () {
 });
 // preloader end
 
+// search bar section js start
+var searchBtn = document.getElementById("m-glass");
+var searchBox = document.querySelector(".search-box");
+var closeBtn = document.querySelector(".close_btn");
+
+searchBtn.addEventListener(
+  "click",
+  function () {
+    searchBox.classList.add("active");
+  },
+  1000
+);
+closeBtn.addEventListener(
+  "click",
+  function () {
+    searchBox.classList.remove("active");
+  },
+  1000
+);
+
+// search bar section js end
+
+// scroll button js start
+$(window).on("scroll", function () {
+  let scrollsize = $(window).scrollTop();
+  if (scrollsize > 700) {
+    $("#backtoTop").slideDown();
+  } else {
+    $("#backtoTop").slideUp();
+  }
+});
+
+$("#backtoTop").on("click", function () {
+  $("html, body").animate({
+    scrollTop: 0,
+  });
+});
+// scroll button js end
+
 $(function () {
+  // fixed menu js start
+  $(window).on('scroll', function () {
+    let scrollsize = $(window).scrollTop();
+    if (scrollsize > 100) {
+      $("#nav").addClass("active");
+    } else {
+      $("#nav").removeClass("active");
+    }
+  });
+  // fixed menu js end
+
   //  Banner section js start
   $(".banner_item").slick({
     arrows: false,
@@ -112,7 +162,7 @@ $(function () {
     arrows: false,
     asNavFor: ".product_thumb_slider_nav",
     autoplay: true,
-    fade:true,
+    fade: true,
   });
   $(".product_thumb_slider_nav").slick({
     slidesToShow: 5,
@@ -133,30 +183,29 @@ $(function () {
 
   // product details section end
 
-// Releted_Products section start 
+  // Releted_Products section start
   $(".Releted_Products_slider").slick({
     slidesToShow: 4,
-    slideToScroll:1,
+    slideToScroll: 1,
     prevArrow: '<i class="RP_arrows fa-solid fa-angle-left"></i>',
     nextArrow: '<i class="RP_arrows fa-solid fa-angle-right"></i>',
   });
-// Releted_Products section end
-  
-// country select js start
+  // Releted_Products section end
+
+  // country select js start
   $("#country_selector").countrySelect({
     // defaultCountry: "Ban",
   });
-// country select js end
+  // country select js end
 
-// blog silder js start 
+  // blog silder js start
   $(".blog_slider_item").slick({
     autoplay: true,
     autoplaySpeed: 2000,
     prevArrow: '<i class="blog_slider_arrows fa-solid fa-angle-left"></i>',
     nextArrow: '<i class="blog_slider_arrows fa-solid fa-angle-right"></i>',
   });
-// blog silder js end 
-
+  // blog silder js end
 });
 AOS.init({
   // initClassName: "aos-init",
