@@ -73,7 +73,7 @@
     <!-- Header section end  -->
 
     <!-- nav section start  -->
-    <nav id="nav" class="navbar navbar-expand-lg">
+ <nav id="nav" class="navbar navbar-expand-lg">
       <div class="container">
         <a href="#" class="navbar-brand">
           <img src="./assets/images/aytor_logo.png" alt="" class="img-fluid" />
@@ -92,19 +92,36 @@
               <a class="nav-link" href="index.html">Home </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="shop.html">Shop </a>
+              <a class="nav-link" href="about.html">About </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Pages </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features </a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                role="button"
+                id="dropdownShop"
+                data-bs-toggle="dropdown"
+                href="shop.html"
+                >Shop
+              </a>
+              <ul class="sub_menu dropdown-menu" aria-labelledby="dropdownShop">
+                <li><a class="dropdown-item" href="shop_details.html">Shop Details</a></li>
+                <li><a class="dropdown-item" href="cart.html">Cart Page</a></li>
+                <li><a class="dropdown-item" href="compare.html">Compare</a></li>
+                <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
+                <li><a class="dropdown-item" href="wishlist.html">Wishlist</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" role="button" id="dropdown_blog" data-bs-toggle="dropdown"href="blog.html">Blogs </a>
+                <ul class="sub_menu dropdown-menu" aria-labelledby="dropdown_blog">
+                <li><a class="dropdown-item" href="blog_details.html">Blog Details</a></li>
+              </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Blogs </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact </a>
+              <a class="nav-link" href="contact.html">Contact </a>
             </li>
           </ul>
         </div>
@@ -112,9 +129,9 @@
         <div class="fa-icon">
           <ul class="d-flex">
             <li>
-              <a href="#"
-                ><i id="m-glass" class="fa-solid fa-magnifying-glass"></i
-              ></a>
+              <button id="m-glass">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
             </li>
             <li>
               <a href="#"><i class="fa-regular fa-user"></i></a>
@@ -129,6 +146,27 @@
         </div>
       </div>
     </nav>
+    <!-- search box start -->
+    <div class="search-box">
+      <div class="container">
+        <div class="inner_container">
+          <div class="search-feild">
+            <input type="text" placeholder="What are you looking for" />
+          </div>
+          <div class="search_btn">
+            <button type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="close_btn">
+        <button>
+          <i class="fa-solid fa-close"></i>
+        </button>
+      </div>
+    </div>
+    <!-- search box end -->
     <!-- nav section end  -->
 
 
@@ -538,8 +576,54 @@
           </p>
         </div>
       </div>
+       <div>
+       <button id="backtoTop">
+        <i class="fa-solid fa-arrow-up"></i>
+       </button>
+      </div>
     </footer>
     <!-- footer section end  -->
+
+       <!-- popup section start  -->
+    <section id="popup">
+      <div class="popup_inner">
+        <div class="container">
+          <div class="popup_heading">
+            <h3>Newsletter</h3>
+          </div>
+          <div>
+            <p>
+              Seamlessly disseminate interoperable collaboration and
+              idea-sharing via magnetic catalysts for change. Interactively
+              enable competitive customer service.
+            </p>
+          </div>
+          <div class="popup_input">
+            <div>
+              <input type="text" placeholder="Enter Your  Email" />
+            </div>
+            <div>
+              <button type="submit">Subscribe</button>
+            </div>
+          </div>
+          <div class="dont_show">
+            <input type="checkbox" />
+            <p>Don’t Show This Popup Again</p>
+          </div>
+          <div class="popup_img">
+            <img
+              src="./assets/images/popup-banner-1.png"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+        </div>
+         <button class="popup_close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+    </section>
+    <!-- popup section end  -->
 
     <!-- jquary  -->
     <script src="./assets/js/jquery-1.12.4.min.js"></script>

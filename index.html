@@ -59,22 +59,61 @@
         <div class="collapse navbar-collapse" id="nav-menu">
           <ul class="navbar-nav mx-auto">
             <li>
-              <a class="nav-link" href="#">Home </a>
+              <a class="nav-link" href="index.html">Home </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="shop.html">Shop </a>
+              <a class="nav-link" href="about.html">About </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Pages </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features </a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                role="button"
+                id="dropdownShop"
+                href="shop.html"
+                >Shop
+              </a>
+              <ul class="sub_menu dropdown-menu" aria-labelledby="dropdownShop">
+                <li>
+                  <a class="dropdown-item" href="shop_details.html"
+                    >Shop Details</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="cart.html">Cart Page</a></li>
+                <li>
+                  <a class="dropdown-item" href="compare.html">Compare</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="checkout.html">Checkout</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="wishlist.html">Wishlist</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                role="button"
+                id="dropdown_blog"
+                href="blog.html"
+                >Blogs
+              </a>
+              <ul
+                class="sub_menu dropdown-menu"
+                aria-labelledby="dropdown_blog"
+              >
+                <li>
+                  <a class="dropdown-item" href="blog_details.html"
+                    >Blog Details</a
+                  >
+                </li>
+              </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Blogs </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact </a>
+              <a class="nav-link" href="contact.html">Contact </a>
             </li>
           </ul>
         </div>
@@ -132,15 +171,27 @@
           style="background-image: url(./assets/images/banner_slider-1.png)"
         >
           <div class="container">
-            <h6>Mega Sale</h6>
-            <h1>Up To 35% Off</h1>
-            <p>
-              Objectively incubate enabled innovation through leveraged
-              mindshare. Competently.
-            </p>
-            <button>
-              Shop Now <span><i class="fa-solid fa-arrow-right"></i></span>
-            </button>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-anchor-placement="top-bottom"
+            >
+              <h6>Mega Sale</h6>
+              <h1>Up To 35% Off</h1>
+            </div>
+            <div
+              data-aos="fade-down"
+              data-aos-duration="1000"
+              data-aos-anchor-placement="center-bottom"
+            >
+              <p>
+                Objectively incubate enabled innovation through leveraged
+                mindshare. Competently.
+              </p>
+              <button>
+                Shop Now <span><i class="fa-solid fa-arrow-right"></i></span>
+              </button>
+            </div>
           </div>
         </div>
         <div
@@ -148,15 +199,27 @@
           style="background-image: url(./assets/images/banner_slider-2.png)"
         >
           <div class="container">
-            <h6>Mega Sale</h6>
-            <h1>Up To 35% Off</h1>
-            <p>
-              Objectively incubate enabled innovation through leveraged
-              mindshare. Competently.
-            </p>
-            <button>
-              Shop Now <span><i class="fa-solid fa-arrow-right"></i></span>
-            </button>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-anchor-placement="top-bottom"
+            >
+              <h6>Mega Sale</h6>
+              <h2>Up To 35% Off</h2>
+            </div>
+            <div
+              data-aos="fade-down"
+              data-aos-duration="1000"
+              data-aos-anchor-placement="center-bottom"
+            >
+              <p>
+                Objectively incubate enabled innovation through leveraged
+                mindshare. Competently.
+              </p>
+              <button>
+                Shop Now <span><i class="fa-solid fa-arrow-right"></i></span>
+              </button>
+            </div>
           </div>
         </div>
         <div
@@ -164,15 +227,27 @@
           style="background-image: url(./assets/images/banner_slider-3.png)"
         >
           <div class="container">
-            <h6>Mega Sale</h6>
-            <h1>Up To 35% Off</h1>
-            <p>
-              Objectively incubate enabled innovation through leveraged
-              mindshare. Competently.
-            </p>
-            <button>
-              Shop Now <span><i class="fa-solid fa-arrow-right"></i></span>
-            </button>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-anchor-placement="top-bottom"
+            >
+              <h6>Mega Sale</h6>
+              <h2>Up To 35% Off</h2>
+            </div>
+            <div
+              data-aos="fade-down"
+              data-aos-duration="1000"
+              data-aos-anchor-placement="center-bottom"
+            >
+              <p>
+                Objectively incubate enabled innovation through leveraged
+                mindshare. Competently.
+              </p>
+              <button>
+                Shop Now <span><i class="fa-solid fa-arrow-right"></i></span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -1449,8 +1524,8 @@
     </section>
     <!-- Best Seller Products section end  -->
 
-    <!-- Deals section start  -->
-    <section id="deals">
+    <!-- deals timer section start  -->
+    <section id="deals_time">
       <div class="container">
         <div class="heading">
           <h2>Deals Of The Days</h2>
@@ -1460,6 +1535,13 @@
             class="deals_timer mx-auto col-lg-4 d-flex justify-content-between align-items-center"
           ></div>
         </div>
+      </div>
+    </section>
+    <!-- deals timer section end  -->
+
+    <!-- Deals section start  -->
+    <section id="deals">
+      <div class="container">
         <div class="deals_slider">
           <div
             class="deals_slider_item mega-hover for_amination img-fluid m-lg-2"
@@ -1551,7 +1633,13 @@
           <div class="col-lg-6">
             <div class="special_img">
               <img src="./assets/images/banner_8.jpg" alt="" />
-              <a class="play-icon">
+              <a
+                class="play-icon"
+                data-autoplay="true"
+                data-vbtype="video"
+                data-maxwidth="800px"
+                href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"
+              >
                 <i class="fa-solid fa-play"></i>
               </a>
             </div>
@@ -1887,12 +1975,53 @@
         </div>
       </div>
       <div>
-       <button id="backtoTop">
-        <i class="fa-solid fa-arrow-up"></i>
-       </button>
+        <button id="backtoTop">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
       </div>
     </footer>
     <!-- footer section end  -->
+
+    <!-- popup section start  -->
+    <section id="popup">
+      <div class="popup_inner">
+        <div class="container">
+          <div class="popup_heading">
+            <h3>Newsletter</h3>
+          </div>
+          <div>
+            <p>
+              Seamlessly disseminate interoperable collaboration and
+              idea-sharing via magnetic catalysts for change. Interactively
+              enable competitive customer service.
+            </p>
+          </div>
+          <div class="popup_input">
+            <div>
+              <input type="text" placeholder="Enter Your  Email" />
+            </div>
+            <div>
+              <button type="submit">Subscribe</button>
+            </div>
+          </div>
+          <div class="dont_show">
+            <input type="checkbox" />
+            <p>Don’t Show This Popup Again</p>
+          </div>
+          <div class="popup_img">
+            <img
+              src="./assets/images/popup-banner-1.png"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+        </div>
+        <button class="popup_close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+    </section>
+    <!-- popup section end  -->
 
     <!-- jquary  -->
     <script src="./assets/js/jquery-1.12.4.min.js"></script>

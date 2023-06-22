@@ -21,7 +21,7 @@
     <!-- xzoom css  -->
     <link rel="stylesheet" href="./assets/css/xzoom.min.css" />
     <!-- country select css  -->
-    <link rel="stylesheet" href="./assets/css/countrySelect.min.css">
+    <link rel="stylesheet" href="./assets/css/countrySelect.min.css" />
     <!-- aos css  -->
     <link rel="stylesheet" href="./assets/css/aos.css" />
     <!-- bootstrap css -->
@@ -92,19 +92,60 @@
               <a class="nav-link" href="index.html">Home </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="shop.html">Shop </a>
+              <a class="nav-link" href="about.html">About </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Pages </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features </a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                role="button"
+                id="dropdownShop"
+                data-bs-toggle="dropdown"
+                href="shop.html"
+                >Shop
+              </a>
+              <ul class="sub_menu dropdown-menu" aria-labelledby="dropdownShop">
+                <li>
+                  <a class="dropdown-item" href="shop_details.html"
+                    >Shop Details</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="cart.html">Cart Page</a></li>
+                <li>
+                  <a class="dropdown-item" href="compare.html">Compare</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="checkout.html">Checkout</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="wishlist.html">Wishlist</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                role="button"
+                id="dropdown_blog"
+                data-bs-toggle="dropdown"
+                href="blog.html"
+                >Blogs
+              </a>
+              <ul
+                class="sub_menu dropdown-menu"
+                aria-labelledby="dropdown_blog"
+              >
+                <li>
+                  <a class="dropdown-item" href="blog_details.html"
+                    >Blog Details</a
+                  >
+                </li>
+              </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Blogs </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact </a>
+              <a class="nav-link" href="contact.html">Contact </a>
             </li>
           </ul>
         </div>
@@ -112,9 +153,9 @@
         <div class="fa-icon">
           <ul class="d-flex">
             <li>
-              <a href="#"
-                ><i id="m-glass" class="fa-solid fa-magnifying-glass"></i
-              ></a>
+              <button id="m-glass">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
             </li>
             <li>
               <a href="#"><i class="fa-regular fa-user"></i></a>
@@ -129,7 +170,29 @@
         </div>
       </div>
     </nav>
+    <!-- search box start -->
+    <div class="search-box">
+      <div class="container">
+        <div class="inner_container">
+          <div class="search-feild">
+            <input type="text" placeholder="What are you looking for" />
+          </div>
+          <div class="search_btn">
+            <button type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="close_btn">
+        <button>
+          <i class="fa-solid fa-close"></i>
+        </button>
+      </div>
+    </div>
+    <!-- search box end -->
     <!-- nav section end  -->
+
     <!-- shop details banner section start  -->
     <div id="shop-details-banner">
       <div class="container">
@@ -146,7 +209,48 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
-            <div class="product_thumb_slider">
+            <div class="product_thumb">
+              <img
+                class="xzoom img-fluid"
+                src="./assets/images/shop-details-1.jpg"
+                xorginal="./assets/images/shop-details-1"
+              />
+              <div class="xzoom-thumbs">
+                <a href="./assets/images/shop-details-1.jpg">
+                  <img
+                    class="xzoom-gallery"
+                    src="./assets/images/shop-details-1(resize).jpg"
+                    width="80"
+                    xpreview="./assets/images/shop-details-1(resize)"
+                  />
+                </a>
+                <a href="./assets/images/shop-details-1.jpg">
+                  <img
+                    class="xzoom-gallery"
+                    src="./assets/images/shop-details-1(resize).jpg"
+                    width="80"
+                    xpreview="./assets/images/shop-details-1(resize)"
+                  />
+                </a>
+                <a href="./assets/images/shop-details-1.jpg">
+                  <img
+                    class="xzoom-gallery"
+                    src="./assets/images/shop-details-1(resize).jpg"
+                    width="80"
+                    xpreview="./assets/images/shop-details-1(resize)"
+                  />
+                </a>
+                <a href="./assets/images/shop-details-1.jpg">
+                  <img
+                    class="xzoom-gallery"
+                    src="./assets/images/shop-details-1(resize).jpg"
+                    width="80"
+                    xpreview="./assets/images/shop-details-1(resize)"
+                  />
+                </a>
+              </div>
+            </div>
+            <!-- <div class="product_thumb_slider">
               <div class="product-thumb_slider_item">
                 <img
                   src="./assets/images/shop-details-1.jpg"
@@ -233,7 +337,7 @@
                   class="img-fluid"
                 />
               </div>
-            </div>
+            </div> -->
           </div>
           <div class="col-lg-6">
             <div class="product_details_info">
@@ -288,22 +392,12 @@
                   <p>Quantity:</p>
                 </div>
                 <div class="plus_minus_btn input-group mb-3">
-                  <button
-                    type="button"
-                    id="cart_minus"
-                    onclick="cart_minus('cart_minus')"
-                  >
-                    <i class="fa-solid fa-minus"></i>
+                  <button class="cartActionBtn" data-behavior="decrement">
+                    -
                   </button>
-                  <input
-                    type="text"
-                    placeholder=""
-                    value="1"
-                    min="1"
-                    id="cart_value"
-                  />
-                  <button type="button" id="cart_plus" onclick="cart_plus()">
-                    <i class="fa-solid fa-plus"></i>
+                  <input type="text" value="1" />
+                  <button class="cartActionBtn" data-behavior="increment">
+                    +
                   </button>
                   <div class="anchor">
                     <a href="#">
@@ -544,13 +638,20 @@
                   <div>
                     <h4>Add a review</h4>
                   </div>
-                  <div>
+                  <div class="star_widget">
                     <p>Your Rating</p>
-                    <span><i class="fa-regular fa-star"></i></span>
-                    <span><i class="fa-regular fa-star"></i></span>
-                    <span><i class="fa-regular fa-star"></i></span>
-                    <span><i class="fa-regular fa-star"></i></span>
-                    <span><i class="fa-regular fa-star"></i></span>
+                    <div class="fiveStar_rating">
+                      <input type="radio" name="rate" id="rate-5" />
+                      <label for="rate-5"></label>
+                      <input type="radio" name="rate" id="rate-4" />
+                      <label for="rate-4"></label>
+                      <input type="radio" name="rate" id="rate-3" />
+                      <label for="rate-3"></label>
+                      <input type="radio" name="rate" id="rate-2" />
+                      <label for="rate-2"></label>
+                      <input type="radio" name="rate" id="rate-1" />
+                      <label for="rate-1"></label>
+                    </div>
                   </div>
                   <div class="input_info">
                     <input type="text" placeholder="Your Name*" />
@@ -1666,8 +1767,54 @@
           </p>
         </div>
       </div>
+      <div>
+        <button id="backtoTop">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
     </footer>
     <!-- footer section end  -->
+
+    <!-- popup section start  -->
+    <section id="popup">
+      <div class="popup_inner">
+        <div class="container">
+          <div class="popup_heading">
+            <h3>Newsletter</h3>
+          </div>
+          <div>
+            <p>
+              Seamlessly disseminate interoperable collaboration and
+              idea-sharing via magnetic catalysts for change. Interactively
+              enable competitive customer service.
+            </p>
+          </div>
+          <div class="popup_input">
+            <div>
+              <input type="text" placeholder="Enter Your  Email" />
+            </div>
+            <div>
+              <button type="submit">Subscribe</button>
+            </div>
+          </div>
+          <div class="dont_show">
+            <input type="checkbox" />
+            <p>Don’t Show This Popup Again</p>
+          </div>
+          <div class="popup_img">
+            <img
+              src="./assets/images/popup-banner-1.png"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+        </div>
+        <button class="popup_close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+    </section>
+    <!-- popup section end  -->
 
     <!-- jquary  -->
     <script src="./assets/js/jquery-1.12.4.min.js"></script>
@@ -1681,7 +1828,7 @@
     <script src="./assets/js/slick.min.js"></script>
     <!-- counter up js  -->
     <script src="./assets/js/jquery.counterup.min.js"></script>
-<!-- country select js   -->
+    <!-- country select js   -->
     <script src="./assets/js/countrySelect.min.js"></script>
     <!-- waypoint js -->
     <script src="./assets/js/waypoints.min.js"></script>

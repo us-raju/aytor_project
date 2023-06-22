@@ -32,14 +32,18 @@
         background-color: $praimaryColor;
       }
     }
-    // .select_option{
-    //   margin-left: auto;
-    //   background: $bgColor;
-    //   border: none;
-    //   option{
-    //     padding: 13px;
-    //   }
-    // }
+    .select_option{
+      margin-left: auto;
+      select{
+        background: $bgColor;
+        border: none;
+        width: 312px;
+        height: 40px;
+      }
+      option{
+        padding: 13px;
+      }
+    }
   }
   .shop_product_one {
     overflow: hidden;

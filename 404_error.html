@@ -92,19 +92,36 @@
               <a class="nav-link" href="index.html">Home </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="shop.html">Shop </a>
+              <a class="nav-link" href="about.html">About </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Pages </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features </a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                role="button"
+                id="dropdownShop"
+                data-bs-toggle="dropdown"
+                href="shop.html"
+                >Shop
+              </a>
+              <ul class="sub_menu dropdown-menu" aria-labelledby="dropdownShop">
+                <li><a class="dropdown-item" href="shop_details.html">Shop Details</a></li>
+                <li><a class="dropdown-item" href="cart.html">Cart Page</a></li>
+                <li><a class="dropdown-item" href="compare.html">Compare</a></li>
+                <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
+                <li><a class="dropdown-item" href="wishlist.html">Wishlist</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" role="button" id="dropdown_blog" data-bs-toggle="dropdown"href="blog.html">Blogs </a>
+                <ul class="sub_menu dropdown-menu" aria-labelledby="dropdown_blog">
+                <li><a class="dropdown-item" href="blog_details.html">Blog Details</a></li>
+              </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Blogs </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact </a>
+              <a class="nav-link" href="contact.html">Contact </a>
             </li>
           </ul>
         </div>
@@ -112,9 +129,9 @@
         <div class="fa-icon">
           <ul class="d-flex">
             <li>
-              <a href="#"
-                ><i id="m-glass" class="fa-solid fa-magnifying-glass"></i
-              ></a>
+              <button id="m-glass">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
             </li>
             <li>
               <a href="#"><i class="fa-regular fa-user"></i></a>
@@ -129,13 +146,35 @@
         </div>
       </div>
     </nav>
+    <!-- search box start -->
+    <div class="search-box">
+      <div class="container">
+        <div class="inner_container">
+          <div class="search-feild">
+            <input type="text" placeholder="What are you looking for" />
+          </div>
+          <div class="search_btn">
+            <button type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="close_btn">
+        <button>
+          <i class="fa-solid fa-close"></i>
+        </button>
+      </div>
+    </div>
+    <!-- search box end -->
     <!-- nav section end  -->
+
     <!-- 404_banner section start  -->
     <section id="page_404">
       <div class="container">
         <div class="error_banner">
           <div class="error_img">
-            <img src="./assets/images/error.png" alt="" />
+            <img src="./assets/images/error.png" alt="" class="img-fluid" />
           </div>
           <div class="error_text">
             <h3>PAGE NOT FOUND!</h3>
@@ -332,6 +371,11 @@
             <strong>Angfuzsoft.</strong>
           </p>
         </div>
+      </div>
+       <div>
+       <button id="backtoTop">
+        <i class="fa-solid fa-arrow-up"></i>
+       </button>
       </div>
     </footer>
     <!-- footer section end  -->

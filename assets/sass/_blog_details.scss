@@ -1,0 +1,300 @@
+// Blog details banner start
+#Blog-details-banner {
+  height: 400px;
+  background-image: url(../images/breadcumb_bg_2.jpg);
+  background-position: center !important;
+  background-size: cover !important;
+  position: relative;
+  z-index: 1;
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+  }
+}
+// Blog banner section end
+
+// blog details section one start
+#blog-details-section-one {
+  padding-top: 100px;
+  .blog_details_item_content {
+    .info {
+      padding: 35px 0px 6px 0px;
+      color: $ParagraphColor;
+      p {
+        display: inline-block;
+        line-height: 26px;
+      }
+      .date {
+        p {
+          border-right: 1px solid #bdbdbd;
+          padding-right: 20px;
+          &:last-child {
+            border-right: none;
+          }
+        }
+      }
+      .s-react {
+        span {
+          padding: 0px 10px 0px 15px;
+        }
+      }
+    }
+    .blog_details_text {
+      padding-bottom: 30px;
+      p {
+        line-height: 26px;
+        color: $ParagraphColor;
+      }
+      .heading {
+        padding-bottom: 16px;
+        h2 {
+          text-align: start;
+        }
+      }
+      .change_bg_item {
+        position: relative;
+        margin: 30px 0px;
+        background-color: $bgColor;
+        border-left: 2px solid $praimaryColor;
+        padding: 40px 0px 40px 50px;
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 15px;
+          right: 80px;
+          width: 20px;
+          height: 40px;
+          background: #c4c7c9;
+          clip-path: polygon(
+            50% 0%,
+            100% 0,
+            100% 50%,
+            0 100%,
+            0 100%,
+            0% 60%,
+            0 0
+          );
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: 15px;
+          right: 40px;
+          width: 20px;
+          height: 40px;
+          background: #c4c7c9;
+          clip-path: polygon(
+            50% 0%,
+            100% 0,
+            100% 50%,
+            0 100%,
+            0 100%,
+            0% 60%,
+            0 0
+          );
+        }
+        p {
+          font-style: italic;
+        }
+      }
+    }
+    .bolg_details_img {
+      p {
+        line-height: 26px;
+        color: $ParagraphColor;
+        padding: 30px 0px;
+      }
+    }
+    .tags_sec {
+      margin-bottom: 70px;
+      padding: 40px 0px;
+      border-top: 1px solid #e0e0e0;
+      border-bottom: 1px solid #e0e0e0;
+      h4 {
+        display: inline-block;
+        margin-right: 12px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        color: $TextColor;
+      }
+      .tags {
+        a {
+          display: inline-block;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 26px;
+          color: $ParagraphColor;
+          padding: 10px 10px;
+          margin: 0px 2.5px;
+          background-color: $bgColor;
+          transition: 0.5s;
+          &:hover {
+            background-color: $praimaryColor;
+            color: $lightColor;
+          }
+        }
+      }
+      .social_icon {
+        ul {
+          li {
+            a {
+              display: inline-block;
+              font-size: 20px;
+              color: #828282;
+              margin: 0px 5px;
+              transition: 0.5s;
+              &:hover {
+                color: $praimaryColor;
+              }
+            }
+          }
+        }
+      }
+    }
+    .aytor_studio {
+      margin-bottom: 70px;
+      padding: 30px;
+      background: $bgColor;
+      .aytor-studio_img {
+        padding-right: 30px;
+        img {
+          width: 80px;
+          height: 80px;
+          line-height: 80px;
+          border-radius: 50%;
+        }
+      }
+      .aytor_studio_info {
+        h5 {
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 30px;
+          color: $TextColor;
+        }
+        h6 {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 28px;
+          color: $praimaryColor;
+        }
+      }
+      .social_icon {
+        padding: 15px 0px;
+        ul {
+          li {
+            a {
+              display: inline-block;
+              font-size: 20px;
+              color: #828282;
+              margin: 0px 5px;
+              transition: 0.5s;
+              &:hover {
+                color: $PrimaryColor3;
+              }
+            }
+          }
+        }
+      }
+    }
+    .aytor_comment {
+      padding-bottom: 70px;
+      h3 {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 40px;
+        color: $TextColor;
+        padding-bottom: 28px;
+      }
+      .comment_sec {
+        .comment_sec_img {
+          padding-right: 20px;
+          img {
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            border-radius: 50%;
+          }
+        }
+        .comment_sec_text {
+          h4 {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 30px;
+          }
+          .reply_sec {
+            padding-bottom: 13px;
+            p {
+              line-height: 26px;
+              color: $ParagraphColor;
+            }
+            span {
+              padding-right: 2px;
+            }
+            a {
+              display: inline-block;
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 28px;
+              color: $ParagraphColor;
+              transition: 0.5s;
+              &:hover {
+                color: $praimaryColor;
+              }
+            }
+          }
+        }
+      }
+      .RoyStudio {
+        padding: 40px 0px 40px 50px;
+      }
+    }
+  }
+  .leave_replay {
+    box-shadow: $shadow1;
+    padding: 40px;
+    h4 {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 40px;
+      color: $TextColor;
+    }
+    P {
+      line-height: 28px;
+      color: $ParagraphColor;
+      padding-bottom: 54px;
+    }
+    input {
+      width: 100%;
+      height: 56px;
+      margin-bottom: 24px;
+      background-color: $bgColor;
+      border: none;
+    }
+    textarea {
+      width: 100%;
+      height: 250px;
+      resize: none;
+      background-color: $bgColor;
+      border: none;
+      margin-bottom: 24px;
+    }
+    button {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 30px;
+      color: $lightColor;
+      background-color: $TextColor;
+      border: none;
+      padding: 13px 26px;
+      transition: .5s;
+      &:hover{
+        background-color: $praimaryColor;
+      }
+    }
+  }
+}
+// blog details section one end

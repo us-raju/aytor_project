@@ -30,9 +30,9 @@ closeBtn.addEventListener(
 $(window).on("scroll", function () {
   let scrollsize = $(window).scrollTop();
   if (scrollsize > 700) {
-    $("#backtoTop").slideDown();
+    $("#backtoTop").fadeIn();
   } else {
-    $("#backtoTop").slideUp();
+    $("#backtoTop").fadeOut();
   }
 });
 
@@ -45,7 +45,7 @@ $("#backtoTop").on("click", function () {
 
 $(function () {
   // fixed menu js start
-  $(window).on('scroll', function () {
+  $(window).on("scroll", function () {
     let scrollsize = $(window).scrollTop();
     if (scrollsize > 100) {
       $("#nav").addClass("active");
@@ -176,10 +176,7 @@ $(function () {
     nextArrow: '<i class="product_nav_arrows fa-solid fa-angle-right"></i>',
   });
 
-  // $(".xzoom").xzoom({
-  //   lens: true,
-  //   position: "right",
-  // });
+  $(".xzoom, .xzoom-gallery").xzoom({ tint: "#333", Xoffset: 15 });
 
   // product details section end
 
@@ -206,11 +203,38 @@ $(function () {
     nextArrow: '<i class="blog_slider_arrows fa-solid fa-angle-right"></i>',
   });
   // blog silder js end
+
+  // cart plus minus button start
+  $(".plus_minus_btn").on("click", function (e) {
+    let targetElement = $(e.target).data("behavior");
+    console.log(targetElement);
+    if (targetElement === "increment") {
+      let cartValue = $(this).children("input").val();
+      cartValue++;
+      $(this).children("input").val(cartValue);
+    } else if (targetElement === "decrement") {
+      let cartValue = $(this).children("input").val();
+      cartValue--;
+      $(this)
+        .children("input")
+        .val(cartValue < 1 ? "1" : cartValue);
+    }
+  });
+  // cart plus minus button end
+
+  // popup hide & show js start
+  $(window).on("load", function () {
+    $("#popup").addClass("active");
+  });
+  $(".popup_close").on("click", function () {
+    $("#popup").removeClass("active");
+  });
+  // popup hide & show js end
 });
-AOS.init({
-  // initClassName: "aos-init",
-  // animatedClassName: "aos-animate",
-});
+
+// aos active start
+AOS.init({});
+// aos active end
 
 // use product tooltip
 const tooltipTriggerList = document.querySelectorAll(
@@ -221,23 +245,13 @@ const tooltipList = [...tooltipTriggerList].map(
 );
 // use product tooltip
 
-// cart plus_minus js
-// let minus_btn = document.getElementById("cart_minus_btn");
-// let plus_btn = document.getElementById("cart_plus_btn");
-// let cart_value = document.getElementById("cart_value");
+// venobox js start 
+new VenoBox();
+// venobox js end 
 
-// function minus_btn(btn_id) {
-//   if (cart_value.value < 2) {
-//     document.getElementById(btn_id).setAttribute("disabled", true);
-//   } else {
-//     cart_value.value--;
-//   }
-// }
-// function plus_btn() {
-//   cart_value.value++;
-//   if (cart_value.value > 1) {
-//     minus_btn.removeAttribute("disabled");
-//   }
-// }
+// play icon video js start
+new VenoBox({
+  selector: ".play-icon",
+});
+// play icon video js end 
 
-// cart plus_minus js

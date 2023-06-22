@@ -177,6 +177,7 @@
         padding: 10px;
         background: none;
         border: 1px solid #e0e0e0;
+        // font-size: 20px;
       }
     }
     input {
@@ -208,8 +209,8 @@
           padding: 18px 20px;
           background-color: $PrimaryColor3;
           color: $lightColor;
-          transition: .5s;
-          &:hover{
+          transition: 0.5s;
+          &:hover {
             background-color: $praimaryColor;
           }
         }
@@ -293,8 +294,57 @@
             padding-right: 5px;
             margin-bottom: 30px;
           }
-          span {
-            color: #fec624;
+          .star_widget {
+            .fiveStar_rating {
+              display: inline-block;
+              transform: rotate(180deg);
+              input {
+                display: none;
+              }
+              label {
+                position: relative;
+                cursor: pointer;
+                &::before {
+                  content: "\f005";
+                  font-family: fontAwesome;
+                  position: relative;
+                  display: block;
+                  font-size: 16px;
+                  color: #444;
+                }
+                &::after {
+                  content: "\f005";
+                  font-family: fontAwesome;
+                  position: absolute;
+                  // display: block;
+                  font-size: 16px;
+                  color: #fd4;
+                  top: 0;
+                  left: 0;
+                  opacity: 0;
+                  transition: 0.5s;
+                }
+                &:hover::after,
+                &:hover ~ label::after {
+                  opacity: 1;
+                }
+              }
+              input:checked ~ label::after {
+                opacity: 1;
+              }
+            }
+
+            // input:not(:checked) ~ label:hover,
+            // input:not(:checked) ~ label:hover ~ label {
+            //   color: #fd4;
+            // }
+            // input:checked ~ label {
+            //   color: #fd4;
+            // }
+            // input#rate-5:checked ~ label {
+            //   color: #fe7;
+            //   text-shadow: 0 0 20px #952;
+            // }
           }
           .input_info {
             margin-bottom: 30px;
