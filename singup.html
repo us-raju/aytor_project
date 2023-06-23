@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registation</title>
+    <!-- Google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- slick slider css  -->
+    <link rel="stylesheet" href="./assets/css/slick.min.css" />
+    <!-- fontawesome css  -->
+    <link rel="stylesheet" href="./assets/css/all.min.css" />
+    <!-- venobox css  -->
+    <link rel="stylesheet" href="./assets/css/venobox.min.css" />
+    <!-- xzoom css  -->
+    <link rel="stylesheet" href="./assets/css/xzoom.min.css" />
+    <!-- country select css  -->
+    <link rel="stylesheet" href="./assets/css/countrySelect.min.css" />
+    <!-- aos css  -->
+    <link rel="stylesheet" href="./assets/css/aos.css" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <!-- custom css  -->
+    <link rel="stylesheet" href="./assets/css/style.min.css" />
+    <!-- Resposnive css  -->
+    <link rel="stylesheet" href="./assets/responsive/responsive.css" />
+  </head>
+  <body>
+    <section id="Registation">
+      <div class="container">
+        <div class="user_details">
+          <ul
+            class="nav nav-pills mb-3 d-flex justify-content-center"
+            id="pills-tab"
+            role="tablist"
+          >
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="Signin"
+                data-bs-toggle="pill"
+                data-bs-target="#user_Signin"
+                type="button"
+                role="tab"
+                aria-controls="user_Signin"
+                aria-selected="true"
+              >
+                <span><i class="fa-solid fa-user"></i></span>
+                Signin
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="Signup"
+                data-bs-toggle="pill"
+                data-bs-target="#user_singup"
+                type="button"
+                role="tab"
+                aria-controls="user_singup"
+                aria-selected="false"
+              >
+                <span><i class="fa-solid fa-user-plus"></i></span>
+                SignUp
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="user_Signin"
+              role="tabpanel"
+              aria-labelledby="Signin"
+            >
+              <div class="username">
+                <span><i class="fa-solid fa-user"></i></span>
+                <input class="password_filed" type="text" required placeholder="Username" />
+              </div>
+              <div class="pass">
+                <span><i class="fa-solid fa-lock"></i></span>
+                <input type="password" required placeholder="Password" />
+                <span class="password_toggle"><i class="password eye fa-solid fa-eye-slash"></i></span>
+              </div>
+              <div>
+                <a href="#">Forgot Password?</a>
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" />
+                <p>Remember Me</p>
+              </div>
+              <div>
+                <button type="submit">
+                  <span><i class="fa-solid fa-right-to-bracket"></i></span>
+                  Signin
+                </button>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="user_singup"
+              role="tabpanel"
+              aria-labelledby="Signup"
+            >
+              <div class="emali">
+                <span><i class="fa-solid fa-envelope"></i></span>
+                <input type="email" required placeholder="Enter Your Email" />
+              </div>
+              <div class="username">
+                <span><i class="fa-solid fa-user"></i></span>
+                <input type="text" required placeholder="Username" />
+              </div>
+              <div class="pass">
+                <span><i class="fa-solid fa-lock"></i></span>
+                <input type="password" required placeholder="Password" />
+              </div>
+              <div class="ConfirmPass">
+                <span><i class="fa-sharp fa-solid fa-square-check"></i></span>
+                <input type="password" required placeholder="Confirm Password" />
+              </div>
+              <div>
+                <input type="checkbox">
+                <a href="#">Accept Terms & Condation</a>
+              </div>
+               <div>
+                <button type="submit">
+                 <span><i class="fa-solid fa-user-plus"></i></span>
+                  SignUp
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- jquary  -->
+    <script src="./assets/js/jquery-1.12.4.min.js"></script>
+    <!-- typed js  -->
+    <script src="./assets/js/typed.umd.js"></script>
+    <!-- venobox js  -->
+    <script src="./assets/js/venobox.min.js"></script>
+    <!-- xzoom js  -->
+    <script src="./assets/js/xzoom.min.js"></script>
+    <!-- slick slider js  -->
+    <script src="./assets/js/slick.min.js"></script>
+    <!-- counter up js  -->
+    <script src="./assets/js/jquery.counterup.min.js"></script>
+    <!-- country select js   -->
+    <script src="./assets/js/countrySelect.min.js"></script>
+    <!-- waypoint js -->
+    <script src="./assets/js/waypoints.min.js"></script>
+    <!-- The final coundown js  -->
+    <script src="./assets/js/jquery.countdown.min.js"></script>
+    <!-- aos js  -->
+    <script src="./assets/js/aos.js"></script>
+    <!-- Bootstrap js  -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <!-- custom js  -->
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>

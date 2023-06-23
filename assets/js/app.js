@@ -230,6 +230,23 @@ $(function () {
     $("#popup").removeClass("active");
   });
   // popup hide & show js end
+
+  // password toggle js start 
+  let button =('.password_toggle')
+  let input =('.password_filed')
+  let icon = ('.password_eye')
+  $('.button').on("click", function () {
+    if (input.type == 'password') {
+      input.type = 'text';
+      icon.removeClass("fa-eye-slash");
+      icon.addClass("fa-eye");
+    } else {
+       input.type = "password";
+       icon.addClass("fa-eye-slash");
+       icon.removeClass("fa-eye");
+    }
+  });
+  // password toggle js end 
 });
 
 // aos active start

@@ -1,0 +1,134 @@
+body {
+  background-color: $PrimaryColor3;
+}
+#Registation {
+  .user_details {
+    padding: 45px 0px;
+    width: 495px;
+    background-color: #f7f6fd;
+    ul li {
+      margin: 0px 10px;
+      button {
+        background: $blackColor;
+        color: $lightColor;
+        padding: 10px 20px;
+      }
+      .active {
+        background-color: $praimaryColor;
+      }
+    }
+    #user_Signin {
+      padding: 0px 40px;
+      .username {
+        position: relative;
+        input {
+          width: 100%;
+          padding: 10px 0px 10px 40px;
+          margin: 10px 0px;
+          color: $ParagraphColor;
+          border-radius: 10px;
+          border: none;
+          box-shadow: $shadow3;
+        }
+        span {
+          position: absolute;
+          left: 20px;
+          top: 22px;
+          color: $ParagraphColor;
+        }
+      }
+      .pass {
+        position: relative;
+        input {
+          width: 100%;
+          padding: 10px 0px 10px 40px;
+          margin: 10px 0px;
+          color: $ParagraphColor;
+          border-radius: 10px;
+          border: none;
+          box-shadow: $shadow3;
+        }
+        span {
+          position: absolute;
+          left: 20px;
+          top: 22px;
+          color: $ParagraphColor;
+        }
+        .password_toggle {
+          display: inline-block;
+          position: absolute;
+          right: 5px;
+          top: 22px;
+          text-align: right;
+        }
+      }
+      a {
+        display: inline-block;
+        color: $praimaryColor;
+        margin-bottom: 35px;
+      }
+      input[checkbox] {
+        accent-color: $praimaryColor;
+      }
+      p {
+        display: inline-block;
+        margin-bottom: 30px;
+      }
+      button {
+        width: 100%;
+        padding: 10px 0px;
+        background-color: $praimaryColor;
+        border: none;
+        border-radius: 10px;
+        color: $lightColor;
+        font-size: 20px;
+        transition: 0.5s;
+        &:hover {
+          background-color: $blackColor;
+        }
+      }
+    }
+    #user_singup {
+      padding: 0px 40px;
+      .username,
+      .emali,
+      .pass,
+      .ConfirmPass {
+        position: relative;
+        input {
+          width: 100%;
+          padding: 10px 0px 10px 40px;
+          margin: 10px 0px;
+          color: $ParagraphColor;
+          border-radius: 10px;
+          border: none;
+          box-shadow: $shadow3;
+        }
+        span {
+          position: absolute;
+          left: 20px;
+          top: 22px;
+          color: $ParagraphColor;
+        }
+      }
+      a {
+        display: inline-block;
+        color: $praimaryColor;
+        margin-bottom: 30px;
+      }
+      button {
+        width: 100%;
+        padding: 10px 0px;
+        background-color: $praimaryColor;
+        border: none;
+        border-radius: 10px;
+        color: $lightColor;
+        font-size: 20px;
+        transition: 0.5s;
+        &:hover {
+          background-color: $blackColor;
+        }
+      }
+    }
+  }
+}
