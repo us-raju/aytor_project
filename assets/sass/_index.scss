@@ -333,7 +333,7 @@ body {
     padding: 8px 10px;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 999;
+    z-index: 99;
     border: 1px solid $lightColor;
     background: $lightColor;
     transition: 0.5s;
@@ -571,6 +571,42 @@ body {
       height: 100%;
       object-fit: cover;
       object-position: center;
+    }
+    &.h-effect{
+    overflow: hidden;
+       &::before, &::after{
+        content: "";
+        position: absolute;
+        pointer-events: none;
+        opacity: 1;
+        z-index: 3;
+       }
+       &::before{
+        top: 0;
+        right: 51%;
+        bottom: 0;
+        left: 50%;
+        background: rgba(255, 255, 255, 0.2);
+       }
+       &::after{
+        top: 50%;
+        right: 0;
+        bottom: 50%;
+        left: 0;
+        background: rgba(255, 255, 255, 0.2);
+       }
+       &:hover::before{
+        left: 0;
+        right: 0;
+        opacity: 0;
+        transition: all 900ms linear;
+       }
+       &:hover::after{
+        top: 0;
+        bottom: 0;
+        opacity: 0;
+        transition: all 900ms linear;
+       }
     }
   }
 }

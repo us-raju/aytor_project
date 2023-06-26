@@ -4,28 +4,6 @@ $(window).on("load", function () {
 });
 // preloader end
 
-// search bar section js start
-var searchBtn = document.getElementById("m-glass");
-var searchBox = document.querySelector(".search-box");
-var closeBtn = document.querySelector(".close_btn");
-
-searchBtn.addEventListener(
-  "click",
-  function () {
-    searchBox.classList.add("active");
-  },
-  1000
-);
-closeBtn.addEventListener(
-  "click",
-  function () {
-    searchBox.classList.remove("active");
-  },
-  1000
-);
-
-// search bar section js end
-
 // scroll button js start
 $(window).on("scroll", function () {
   let scrollsize = $(window).scrollTop();
@@ -44,6 +22,30 @@ $("#backtoTop").on("click", function () {
 // scroll button js end
 
 $(function () {
+  // password toggle js start
+  let button = ('.password_toggle');
+  let input = (".password_field");
+  let icon = ('.password_eye')
+  $("button").on("click", function () {
+    if (input.type == "password") {
+      input.type = "text";
+      $('icon').removeClass("fa-eye-slash");
+      $("icon").addClass("fa-eye");
+    } else {
+      input.type = "password";
+      $("icon").addClass("fa-eye-slash");
+      $("icon").removeClass("fa-eye");
+    }
+  });
+  // password toggle js end
+  // Registration popup js start 
+  $(".sing").on("click", function () {
+    $("#Registation").addClass("active");
+  });
+  $(".regi_close").on("click", function () {
+    $("#Registation").removeClass("active");
+  });
+  // Registration popup js end 
   // fixed menu js start
   $(window).on("scroll", function () {
     let scrollsize = $(window).scrollTop();
@@ -189,12 +191,6 @@ $(function () {
   });
   // Releted_Products section end
 
-  // country select js start
-  $("#country_selector").countrySelect({
-    // defaultCountry: "Ban",
-  });
-  // country select js end
-
   // blog silder js start
   $(".blog_slider_item").slick({
     autoplay: true,
@@ -230,23 +226,6 @@ $(function () {
     $("#popup").removeClass("active");
   });
   // popup hide & show js end
-
-  // password toggle js start 
-  let button =('.password_toggle')
-  let input =('.password_filed')
-  let icon = ('.password_eye')
-  $('.button').on("click", function () {
-    if (input.type == 'password') {
-      input.type = 'text';
-      icon.removeClass("fa-eye-slash");
-      icon.addClass("fa-eye");
-    } else {
-       input.type = "password";
-       icon.addClass("fa-eye-slash");
-       icon.removeClass("fa-eye");
-    }
-  });
-  // password toggle js end 
 });
 
 // aos active start
@@ -270,5 +249,27 @@ new VenoBox();
 new VenoBox({
   selector: ".play-icon",
 });
-// play icon video js end 
+// play icon video js end
+
+// search bar section js start
+var searchBtn = document.getElementById("m-glass");
+var searchBox = document.querySelector(".search-box");
+var closeBtn = document.querySelector(".close_btn");
+
+searchBtn.addEventListener(
+  "click",
+  function () {
+    searchBox.classList.add("active");
+  },
+  1000
+);
+closeBtn.addEventListener(
+  "click",
+  function () {
+    searchBox.classList.remove("active");
+  },
+  1000
+);
+
+// search bar section js end
 

@@ -278,7 +278,7 @@ body {
 #offer {
   position: relative;
   overflow: hidden;
-  ::before {
+  &::before {
     content: "";
     position: absolute;
     pointer-events: none;
@@ -288,10 +288,10 @@ body {
     right: 51%;
     bottom: 0;
     left: 50%;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.2);
     transform: skew(45deg);
   }
-  &:hover ::before {
+  &:hover::before {
     left: 0;
     right: 0;
     opacity: 0;
@@ -304,35 +304,35 @@ body {
 .mega-hover {
   position: relative;
   overflow: hidden;
-  ::after,
-  ::before {
+  &::after,
+  &::before {
     content: "";
     position: absolute;
     pointer-events: none;
     opacity: 1;
     z-index: 3;
   }
-  ::before {
+  &::before {
     top: 0;
     right: 51%;
     bottom: 0;
     left: 50%;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.2);
   }
-  ::after {
+  &::after {
     top: 50%;
     right: 0;
     bottom: 50%;
     left: 0;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.2);
   }
-  &:hover ::before {
+  &:hover::before {
     left: 0;
     right: 0;
     opacity: 0;
     transition: all 900ms linear;
   }
-  &:hover ::after {
+  &:hover::after {
     top: 0;
     bottom: 0;
     opacity: 0;
@@ -764,3 +764,167 @@ header {
   }
 }
 // popup section end
+
+// registration section start 
+#Registation {
+  position: fixed;
+  background-color:rgba(68, 68, 68, 80%);
+  inset: 0;
+  z-index: 999;
+  transform: scale(0);
+  transition: .5s;
+  &.active{
+    transform: scale(1);
+  }
+  .user_details {
+    position: relative;
+    border-radius: 20px;
+    padding: 45px 0px;
+    width: 495px;
+    background-color: #f7f6fd;
+    .regi_close{
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      font-size: 20px;
+      color: $TextColor;
+      transition: .5s;
+      &:hover{
+        color: $praimaryColor;
+      }
+    }
+    ul li {
+      margin: 0px 10px;
+      button {
+        background: $blackColor;
+        color: $lightColor;
+        padding: 10px 20px;
+      }
+      .active {
+        background-color: $praimaryColor;
+      }
+    }
+    #user_Signin {
+      padding: 0px 40px;
+      .username {
+        position: relative;
+        input {
+          width: 100%;
+          padding: 10px 0px 10px 40px;
+          margin: 10px 0px;
+          color: $ParagraphColor;
+          border-radius: 10px;
+          border: none;
+          box-shadow: $shadow3;
+        }
+        span {
+          position: absolute;
+          left: 20px;
+          top: 22px;
+          color: $ParagraphColor;
+        }
+      }
+      .pass {
+        position: relative;
+        input {
+          width: 100%;
+          padding: 10px 50px 10px 40px;
+          margin: 10px 0px;
+          color: $ParagraphColor;
+          border-radius: 10px;
+          border: none;
+          box-shadow: $shadow3;
+        }
+        span {
+          position: absolute;
+          left: 20px;
+          top: 22px;
+          color: $ParagraphColor;
+        }
+        .password_toggle {
+          right: 20px;
+          left: auto;
+          cursor: pointer;
+
+        }
+      }
+      a {
+        display: inline-block;
+        color: $praimaryColor;
+        margin-bottom: 35px;
+      }
+      input[type="checkbox"] {
+        accent-color: $praimaryColor;
+      }
+      p {
+        display: inline-block;
+        margin-bottom: 30px;
+      }
+      button {
+        width: 100%;
+        padding: 10px 0px;
+        background-color: $praimaryColor;
+        border: none;
+        border-radius: 10px;
+        color: $lightColor;
+        font-size: 20px;
+        transition: 0.5s;
+        &:hover {
+          background-color: $blackColor;
+        }
+      }
+    }
+    #user_singup {
+      padding: 0px 40px;
+      .username,
+      .emali,
+      .pass,
+      .ConfirmPass {
+        position: relative;
+        input {
+          width: 100%;
+          padding: 10px 50px 10px 40px;
+          margin: 10px 0px;
+          color: $ParagraphColor;
+          border-radius: 10px;
+          border: none;
+          box-shadow: $shadow3;
+        }
+        span {
+          position: absolute;
+          left: 20px;
+          top: 22px;
+          color: $ParagraphColor;
+          cursor: pointer;
+        }
+         .password_toggle {
+          right: 20px;
+          left: auto;
+        }
+      }
+      a {
+        display: inline-block;
+        color: $praimaryColor;
+        margin-bottom: 30px;
+      }
+       input[type="checkbox"] {
+        accent-color: $praimaryColor;
+      }
+      button {
+        width: 100%;
+        padding: 10px 0px;
+        background-color: $praimaryColor;
+        border: none;
+        border-radius: 10px;
+        color: $lightColor;
+        font-size: 20px;
+        transition: 0.5s;
+        &:hover {
+          background-color: $blackColor;
+        }
+      }
+    }
+  }
+}
+
+// registration section end 

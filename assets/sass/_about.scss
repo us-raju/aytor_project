@@ -163,6 +163,43 @@
       object-fit: cover;
       object-position: center;
     }
+    &.h-effect {
+      overflow: hidden;
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        pointer-events: none;
+        opacity: 1;
+        z-index: 3;
+      }
+      &::before {
+        top: 0;
+        right: 51%;
+        bottom: 0;
+        left: 50%;
+        background: rgba(255, 255, 255, 0.2);
+      }
+      &::after {
+        top: 50%;
+        right: 0;
+        bottom: 50%;
+        left: 0;
+        background: rgba(255, 255, 255, 0.2);
+      }
+      &:hover::before {
+        left: 0;
+        right: 0;
+        opacity: 0;
+        transition: all 900ms linear;
+      }
+      &:hover::after {
+        top: 0;
+        bottom: 0;
+        opacity: 0;
+        transition: all 900ms linear;
+      }
+    }
   }
 }
 // our story section end
@@ -261,8 +298,8 @@
 
 // Avater section start
 #avater {
-  background-color: red;
   position: relative;
+  // background-color: red;
   .avater_img {
     margin-bottom: 25px;
   }
@@ -314,12 +351,18 @@
     }
     .avater_slider_nav_img {
       position: absolute;
-      transition: 0.5s;
+      width: auto !important;
+      cursor: pointer;
+      animation: moving linear infinite 14s;
+      z-index: 999;
+      &.slick-slide {
+        height: auto !important;
+      }
     }
     .avater_slider_nav_img:nth-child(1) {
       position: absolute;
       top: 0;
-      right: 70px;
+      left: 15%;
       img {
         width: 70px;
         height: 70px;
@@ -329,8 +372,9 @@
     }
     .avater_slider_nav_img:nth-child(2) {
       position: absolute;
-      top: 120px;
-      right: 0px;
+      top: 20%;
+      left: 0;
+      animation-delay: 3s;
       img {
         width: 40px;
         height: 40px;
@@ -340,8 +384,9 @@
     }
     .avater_slider_nav_img:nth-child(3) {
       position: absolute;
-      bottom: 0px;
-      right: 5px;
+      bottom: 20%;
+      left: 15%;
+      animation-delay: 5s;
       img {
         width: 30px;
         height: 30px;
@@ -349,6 +394,86 @@
         border-radius: 50%;
       }
     }
+    .avater_slider_nav_img:nth-child(4) {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      animation-delay: 7s;
+      img {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 50%;
+      }
+    }
+    .avater_slider_nav_img:nth-child(5) {
+      position: absolute;
+      top: 0;
+      right: 20%;
+      img {
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        border-radius: 50%;
+      }
+    }
+    .avater_slider_nav_img:nth-child(6) {
+      position: absolute;
+      top: 20%;
+      right: 0;
+      animation-delay: 3s;
+      img {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 50%;
+      }
+    }
+    .avater_slider_nav_img:nth-child(7) {
+      position: absolute;
+      bottom: 20%;
+      right: 15%;
+      animation-delay: 5s;
+      img {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 50%;
+      }
+    }
+    .avater_slider_nav_img:nth-child(8) {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      animation-delay: 7s;
+      img {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 50%;
+      }
+    }
+ @keyframes moving {
+    0% {
+        transform: translate(0px, 0px)
+    }
+
+    20% {
+        transform: translate(0px, 60px)
+    }
+
+    50% {
+        transform: translate(-60px, 60px)
+    }
+
+    70% {
+        transform: translate(-60px, 0px)
+    }
+
+    100% {
+        transform: translate(0px, 0px)
+    }
+}
   }
 }
 // Avater section end

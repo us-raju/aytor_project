@@ -18,8 +18,6 @@
     <link rel="stylesheet" href="./assets/css/all.min.css" />
     <!-- venobox css  -->
     <link rel="stylesheet" href="./assets/css/venobox.min.css" />
-    <!-- country select css  -->
-    <link rel="stylesheet" href="./assets/css/countrySelect.min.css" />
     <!-- xzoom css  -->
     <link rel="stylesheet" href="./assets/css/xzoom.min.css" />
     <!-- aos css  -->
@@ -74,7 +72,7 @@
 
     <!-- nav section start  -->
     <nav id="nav" class="navbar navbar-expand-lg">
-      <div class="container">
+       <div class="container">
         <a href="#" class="navbar-brand">
           <img src="./assets/images/aytor_logo.png" alt="" class="img-fluid" />
         </a>
@@ -94,34 +92,56 @@
             <li class="nav-item">
               <a class="nav-link" href="about.html">About </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pages </a>
-            </li>
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
                 role="button"
                 id="dropdownShop"
-                data-bs-toggle="dropdown"
                 href="shop.html"
                 >Shop
               </a>
               <ul class="sub_menu dropdown-menu" aria-labelledby="dropdownShop">
-                <li><a class="dropdown-item" href="shop_details.html">Shop Details</a></li>
+                <li>
+                  <a class="dropdown-item" href="shop_details.html"
+                    >Shop Details</a
+                  >
+                </li>
                 <li><a class="dropdown-item" href="cart.html">Cart Page</a></li>
-                <li><a class="dropdown-item" href="compare.html">Compare</a></li>
-                <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
-                <li><a class="dropdown-item" href="wishlist.html">Wishlist</a></li>
+                <li>
+                  <a class="dropdown-item" href="compare.html">Compare</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="checkout.html">Checkout</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="wishlist.html">Wishlist</a>
+                </li>
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" role="button" id="dropdown_blog" data-bs-toggle="dropdown"href="blog.html">Blogs </a>
-                <ul class="sub_menu dropdown-menu" aria-labelledby="dropdown_blog">
-                <li><a class="dropdown-item" href="blog_details.html">Blog Details</a></li>
+              <a
+                class="nav-link dropdown-toggle"
+                role="button"
+                id="dropdown_blog"
+                href="blog.html"
+                >Blogs
+              </a>
+              <ul
+                class="sub_menu dropdown-menu"
+                aria-labelledby="dropdown_blog"
+              >
+                <li>
+                  <a class="dropdown-item" href="blog_details.html"
+                    >Blog Details</a
+                  >
+                </li>
               </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact </a>
+            </li>
+            <li class="nav-item">
+              <a role="button" class="nav-link sing" href="#Registation">Signup/Signin</a>
             </li>
           </ul>
         </div>
@@ -134,7 +154,9 @@
               </button>
             </li>
             <li>
-              <a href="#"><i class="fa-regular fa-user"></i></a>
+              <a href="#"
+                ><i class="fa-regular fa-user"></i
+              ></a>
             </li>
             <li>
               <a href="#"><i class="fa-regular fa-heart"></i></a>
@@ -184,7 +206,9 @@
             </p>
           </div>
           <div class="anchor">
-            <a href="index.html">Back to Home <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="index.html"
+              >Back to Home <i class="fa-solid fa-arrow-right"></i
+            ></a>
           </div>
         </div>
       </div>
@@ -372,13 +396,126 @@
           </p>
         </div>
       </div>
-       <div>
-       <button id="backtoTop">
-        <i class="fa-solid fa-arrow-up"></i>
-       </button>
+      <div>
+        <button id="backtoTop">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
       </div>
     </footer>
     <!-- footer section end  -->
+
+     <!-- Registation section start  -->
+       <section id="Registation">
+      <div class="container d-flex justify-content-center align-items-center h-100">
+        <div class="user_details">
+          <span class="regi_close"><i class="fa-solid fa-xmark"></i></span>
+          <ul
+            class="nav nav-pills mb-3 d-flex justify-content-center"
+            id="pills-tab"
+            role="tablist"
+          >
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="Signin"
+                data-bs-toggle="pill"
+                data-bs-target="#user_Signin"
+                type="button"
+                role="tab"
+                aria-controls="user_Signin"
+                aria-selected="true"
+              >
+                <span><i class="fa-solid fa-user"></i></span>
+                Signin
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="Signup"
+                data-bs-toggle="pill"
+                data-bs-target="#user_singup"
+                type="button"
+                role="tab"
+                aria-controls="user_singup"
+                aria-selected="false"
+              >
+                <span><i class="fa-solid fa-user-plus"></i></span>
+                SignUp
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="user_Signin"
+              role="tabpanel"
+              aria-labelledby="Signin"
+            >
+              <div class="username">
+                <span><i class="fa-solid fa-user"></i></span>
+                <input type="text" required placeholder="Username" />
+              </div>
+              <div class="pass">
+                <span><i class="fa-solid fa-lock"></i></span>
+                <input class="password_field" type="password" required placeholder="Password" />
+                <span class="password_toggle"><i class="password_eye fa-solid fa-eye-slash"></i></span>
+              </div>
+              <div>
+                <a href="#">Forgot Password?</a>
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" />
+                <p>Remember Me</p>
+              </div>
+              <div>
+                <button type="submit">
+                  <span><i class="fa-solid fa-right-to-bracket"></i></span>
+                  Signin
+                </button>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="user_singup"
+              role="tabpanel"
+              aria-labelledby="Signup"
+            >
+              <div class="emali">
+                <span><i class="fa-solid fa-envelope"></i></span>
+                <input type="email" required placeholder="Enter Your Email" />
+              </div>
+              <div class="username">
+                <span><i class="fa-solid fa-user"></i></span>
+                <input type="text" required placeholder="Username" />
+              </div>
+              <div class="pass">
+                <span><i class="fa-solid fa-lock"></i></span>
+                <input class="password_field" type="password" required placeholder="Password" />
+                <span class="password_toggle"><i class="password_eye fa-solid fa-eye-slash"></i></span>
+
+              </div>
+              <div class="ConfirmPass">
+                <span><i class="fa-solid fa-lock"></i></span>
+                <input type="password" required placeholder="Confirm Password" />
+                <span class="password_toggle"><i class="password eye fa-solid fa-eye-slash"></i></span>
+              </div>
+              <div>
+                <input type="checkbox">
+                <a href="#">Accept Terms & Condation</a>
+              </div>
+               <div>
+                <button type="submit">
+                 <span><i class="fa-solid fa-user-plus"></i></span>
+                  SignUp
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Registation section end  -->
 
     <!-- jquary  -->
     <script src="./assets/js/jquery-1.12.4.min.js"></script>
@@ -388,8 +525,6 @@
     <script src="./assets/js/venobox.min.js"></script>
     <!-- xzoom js  -->
     <script src="./assets/js/xzoom.min.js"></script>
-    <!-- country select js   -->
-    <script src="./assets/js/countrySelect.min.js"></script>
     <!-- slick slider js  -->
     <script src="./assets/js/slick.min.js"></script>
     <!-- counter up js  -->
